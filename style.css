@@ -149,8 +149,6 @@ nav a i {
 .hack-btn {
   margin-top: 20px;
   display: flex;
-
-
 }
 
 .live {
@@ -439,6 +437,25 @@ footer {
     margin-right: 10px;
     margin-left: 2.2px;
   }
+
+  .hack-btn{
+    margin-top: 10px;
+  }
+   .code-repo{
+    padding: 3px 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+   }
+
+   .live{
+    padding: 0px 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+
+   }
   .edu-details h2 a{
     display: none;
   }
