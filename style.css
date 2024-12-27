@@ -29,27 +29,22 @@ nav{
   font-size: 25px;
   margin-bottom:20px;
   border-radius: 10px;
-  gap: 20px;
+  gap: 28px;
   background: rgba( 255, 255, 255, 0 );
   backdrop-filter: blur( 5.5px );
   -webkit-backdrop-filter: blur( 5.5px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-
 }
 
 nav a {
   text-decoration: none;
   color: white;
- 
 }
-  
-
 
 nav a i {
   font-weight: 100;
 }
-
 
 .main-content {
   width: 50%;
@@ -414,7 +409,36 @@ footer {
   .project-del p{
     text-align: start;
   }
+  .hero h1 {
+    font-size: 7vw;
+  }
 
+  .hero h3{
+    font-size: 3vw;
+    font-weight: 100;
+    text-align: justify;
+  }
+
+  .hack-details h2{
+    font-size: 4vw;
+  }
+  .hack-details h2 span{
+    font-size: 3vw;
+  }
+  .hack-details h5{
+    font-size: 3.8vw;
+  }
+  .hack-details p{
+    font-size: 3.5vw;
+  }
+  .project h2{
+    font-size: 15px;
+  }
+  .hack-details h2 i{
+    font-size:15px;
+    margin-right: 10px;
+    margin-left: 2.2px;
+  }
   .edu-details h2 a{
     display: none;
   }
