@@ -329,6 +329,10 @@ footer {
   font-size: 13px;
 }
 
+.edu-details h4 a{
+  display: none;
+}
+
 
 .background-animation {
   width: 100%;
@@ -375,4 +379,23 @@ footer {
   .project-del p{
     text-align: start;
   }
+
+  .edu-details h2 a{
+    display: none;
+  }
+  .edu-details h4  a{
+    display: block;
+    text-decoration: none;
+    color: #4f53c3;
+    font-size: 3.4vw;
+  }
+  .edu-details h2{
+    font-size: 4.5vw;
+  }
+  .edu-details h2{
+    font-size: 4.5vw;
+  }
+  .edu-details p{
+    font-size: 12px;  
+}
 }
