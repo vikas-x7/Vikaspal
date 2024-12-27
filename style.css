@@ -5,18 +5,22 @@
 }
 
 body {
-  background-color: black;
+  background-color: #09090B;
   user-select: none;
   font-family: "Funnel Display", sans-serif;
   display: flex;
   justify-content: center;
+}
 
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .main-content {
   width: 50%;
   text-align: center;
   margin-top: 20px;
+  position: absolute;
 }
 
 .profile-img {
@@ -30,7 +34,7 @@ body {
   border-radius: 50%;
 }
 
-.hero{
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -38,56 +42,71 @@ body {
   color: white;
 }
 
-.hero h3{
+.hero h3 {
   text-align: start;
   color: #C7C7C7;
   font-weight: 500;
   font-size: 15px;
   margin-top: 10px;
 }
-.hero h1{
+
+.hero h1 {
   font-size: 33px;
 }
 
-.hacks{
+.hacks {
   color: rgb(229, 226, 226);
   text-align: start;
   margin-top: 40px;
 }
-.hack-details{
+
+.hack-details {
   padding-left: 30px;
-  margin-top:37.4px;
-}
-.hack-details h2{
- font-size: 17px; 
- margin-bottom: 8.7px;
- margin-left: -50px;
-}
-.hack-details p{
- color: #868689;
- margin-top: 13.33px;
- font-size: 14px;
-}
-.hack-details h5{
- color: #ACACAD;
- font-size: 15.5px;
- font-weight: 500;
+  margin-top: 37.4px;
 }
 
-.hacks h1{
+.hack-details h2 {
+  font-size: 18px;
+  margin-bottom: 8.7px;
+  margin-left: -50px;
+}
+.hack-details h2 span{
+ background: #27272A;
+ font-size: 14px ;
+ padding: 2px 7px;
+ text-align: center;
+ border-radius: 3px;
+ font-weight: 300;
+ 
+}
+
+.hack-details p {
+  color: #868689;
+  margin-top: 13.33px;
+  font-size: 16px;
+}
+
+.hack-details h5 {
+  color: #ACACAD;
+  font-size: 17.5px;
+  font-weight: 500;
+}
+
+.hacks h1 {
   font-size: 27px;
-  text-shadow: 
-  0 0 21px rgb(255, 255, 255), 
-  0 0 100px rgb(255, 255, 255),
-  0 0 0px rgb(255, 255, 255);
+  text-shadow:
+    0 0 21px rgb(255, 255, 255),
+    0 0 100px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
   margin-bottom: 20px;
 }
 
-.side-line{
+.side-line {
   border-left: 1px solid rgb(74, 74, 74);
+  margin-left: 20px;
 }
 
-.hack-details h2 i{
+.hack-details h2 i {
   color: white;
   font-size: 20px;
   background: #27272A;
@@ -95,9 +114,9 @@ body {
   border-radius: 50%;
   font-weight: 100;
   margin-right: 6.6px;
- }
+}
 
-.hack-btn{
+.hack-btn {
   margin-top: 20px;
   display: flex;
 
@@ -106,73 +125,92 @@ body {
 
 .live {
   background-color: #f7f7f7;
-  padding: 4px 20px;
+  padding: 6px 20px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
+  background: #27272A;
 }
 
-.code-repo{
+.code-repo {
   background-color: #f7f7f7;
   padding: 0px 7px;
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
   font-size: 20px;
   margin-right: 10px;
+  background: #27272A;
 }
 
-.skills{
+.code-repo:hover{
+  background: white;
+  color: black;
+  transition: 300ms;
+}
+
+.live:hover{
+  background: white;
+  color: black;
+  transition: 300ms;
+}
+
+.skills {
   color: white;
   text-align: start;
   margin-top: 90px;
 }
 
-.skill-col{
-  margin-top: 10px;
- 
-  display: flex;
-  flex-wrap: wrap; 
-}
-.skill-col p{
- margin-left: 10px;
- color: #ffffff;
- background: rgb(23, 23, 23);
- padding: 5px;
- border-radius: 10px;
- font-size: 13px;
- display: flex;
- align-items: center;
- justify-content: center;
+.skills h1 {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  text-shadow:
+    0 0 21px rgb(255, 255, 255),
+    0 0 100px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
 }
 
-.project{
+.skill-col {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-col p {
+  margin-left: 10px;
+  color: #ffffff;
+  background: rgb(23, 23, 23);
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.project {
   color: white;
   margin-top: 100px;
 }
-.project h1{
-  color: rgb(167, 160, 160);
-  margin-top: 5px;
-  font-size: 30px;
- 
-}
-.project h2{
-  color: white;
-  margin-top: 5px;
-  font-size: 20px;
-  text-shadow: 
-  0 0 30px rgb(255, 255, 255), 
-  0 0 100px rgb(255, 255, 255),
-  0 0 0px rgb(255, 255, 255);
-}
-.project p{
-  color: rgb(144, 141, 141);
 
-  padding: 2px 10px;
-  border-radius: 3px;
+.project h1 {
+  font-size: 40px;
+  margin-top: 10px;
+  text-shadow:
+    0 0 21px rgb(255, 255, 255),
+    0 0 100px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
 }
 
-.project-packet{
+.project h2 {
+  margin-top: 10px;
+  font-weight: 100;
+  color: #868689;
+
+}
+
+.project-packet {
   color: white;
-  margin-top:40px;
+  margin-top: 40px;
   display: flex;
 }
 
@@ -182,34 +220,133 @@ body {
   overflow: hidden;
   border: 1px solid rgb(101, 100, 100);
 }
-.project-img img{
+
+.project-img img {
   width: 100%;
-  
+
 }
 
-.project-del{
+.project-del {
   text-align: start;
   width: 50%;
-  padding:20px;
+  padding: 20px;
 }
 
-.education{
+.education {
   color: white;
   text-align: start;
 }
 
-.clg{
-  padding-left: 30px;
-  margin-top:10px;
-  border-left: 1px solid white;
+.education h1 {
+  margin-top: 40px;
+  font-size: 30px;
+  text-shadow:
+    0 0 21px rgb(255, 255, 255),
+    0 0 100px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
 }
 
-.get-me{
+.edu-details {
+  padding-left: 30px;
+  margin-top: 37.4px;
+}
+
+.edu-details h2 {
+  font-size: 17px;
+  margin-bottom: 8.7px;
+  margin-left: -50px;
+}
+
+.edu-details p {
+  color: #868689;
+  margin-top: 13.33px;
+  font-size: 14px;
+}
+
+.edu-details h5 {
+  color: #ACACAD;
+  font-size: 15.5px;
+  font-weight: 500;
+}
+
+.edu-details h2 i {
+  color: white;
+  font-size: 20px;
+  background: #27272A;
+  padding: 9.7px;
+  border-radius: 50%;
+  font-weight: 100;
+  margin-right: 6.6px;
+}
+
+.edu-details h2 a {
+  text-decoration: none;
+  color: rgb(88, 88, 224);
+  font-weight: 300;
+}
+
+.get-me {
   color: white;
   margin-top: 100px;
   margin-bottom: 120px;
 }
 
-.get-me h1{
-  font-size:40px;
+.get-me h1 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.get-me h2 {
+  margin-top: 10px;
+  font-weight: 100;
+  color: #868689;
+  font-size: 17px;
+}
+
+.get-me p {
+  padding: 5px 10px;
+  display: inline;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 50px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 5px;
+}
+
+footer {
+  color: #989595;
+  font-size: 13px;
+}
+
+
+.background-animation {
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  background: none;
+  mask:linear-gradient(180deg, white,40%, transparent);
+  background-image:   url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAABBVBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////85QWmiAAAAV3RSTlMAAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUnKCkqKywtMDEyMzQ2ODk7PD0/QEFCQ0RFRkdJS01OUFJVVldYWVtcXV9hYmpscXwejIx6AAADsUlEQVR4XuzZiVKbVRjHYXnP+ZYESNISKMRggS4spbaIC7agrcWtLq3r/V+KF+A486rTjLHP7xKeOfmfM1/e+ftpZTFFqbGynC0eq93eGwasXDe/+nW/wMo1+vSbWcDKVccbnc16I8GCBUuwYMGCBQuWoun7msNS3Tw9npQUlrqTVy/3mhSW6vTkcJw+WTare6s2y20ICxasaPsKK1l3+2yjwMo1fvH7wxZWrv7wcqfCylX69SZg/T+DBQsWLFiCBQsWLFiwBAsWLFiwYAkWrKiDvsLKVacPH9wosFK1Rz9+d7eFlapuHB1NnKxcUfvOZv1VbkNYsKId9sk9hdUenN3tcwCw1p/8fDVKAjhZ8+PdLgcAK5quiTcM4DaEBUuwSpMdW1hltDsfBqxUze2ri1sVVqrmvacfb8HKVdZm24OAlStqfWsG3tMBFizBggULFixYggULFixYsAQLFixYsGAJFixYsGDBEixYsGDBgiVYsGDBggVLsKJfGwSsXP2983s9rFyrZ9cfrC4rVmmaWCRWt//ooFtSrDI+2FtbpFZ0g25ZN6vZ++zJTnUbpmrmFx9twcoVw63NPmDlilpiBZYXPCzBggULFixYggULFqxSC6xcZTibjwusTDE8ur6+38LKVLa//O31cQMrU4xOL8+mAStVGYyG1cAvY7BgwYIFS7BgwYIFC5ZgwYIFCxYswYJVmhKwcpXJ/qTCytWfvDzqYeXqT1+dwEpWp8fTCitZ6Qz8vwoWLFiwYMGCBQsWLFjRDvuSA4BVZ49ORjktWP37r79+t6YAYNWto7urkQKAFbVrE1awUsESLFiwYMGCJViwYMGCBUuwYMGCBQuWom1LEkv93uFa5LA0vvp2p+SwNLq4vpXEUrs1H0QOS1GbMPCeDrBgwYIlWLBgwYIF67/1HS4XrMHBnQGsZBsvrqewkt18/sUGrGTdfLeHlSyaJmC9oWDBggULlmDBggULFizBggULFixYggULFixYsAQrVb05HwasXOtPf7nfJrFgffLTnWbhWKWpsYRYdbzdx6Kx6nR/pzPwufqT5+ejgJWqO7w6W4eVq4xn08bPMFmpNWD902DBEixYsGDBgiVYsGDBggUrViJyALCimc5v1BwArPHlDx8OcwCw1h4/e9DnAGxWWZ38+S9suQ1hwYIFC5ZgwYIFCxYswYIFC1ZdmwwCVqoYnT877GClKhuff/94ACtVtJuzcYGVLEqsLF1/tAPHBAAAAAiD7J/aGjtgAQAAcExSazJsIKj4AAAAAElFTkSuQmCC");
+
+  animation: snowy 50s linear infinite;
+  
+
+  
+}
+
+@keyframes snowy {
+  0% {
+    background-position: 0px -100px, 0px -200px, 0px -300px;
+  }
+ 
+  100% {
+    background-position: 0px 1000px, 0px 1200px, 0px 1400px; 
+  }
+}
+
+
+@media screen and (max-width: 426px) {
+
+  .main-content{
+    width: 80%;
+  }
 }
