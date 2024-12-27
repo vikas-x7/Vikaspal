@@ -60,7 +60,6 @@ nav a i {
 .profile-img img {
   max-width: 130px;
   height: auto;
-  border-radius: 10px;
   border-radius: 50%;
 }
 
@@ -395,6 +394,9 @@ footer {
     width: 80%;
   }
 
+  .profile-img img {
+    max-width: 90px;
+  }
   .project-packet{
     display: flex;
     flex-wrap: wrap;
@@ -409,6 +411,7 @@ footer {
   }
   .hero h1 {
     font-size: 7vw;
+    margin-top: -20px;
   }
 
   .hero h3{
