@@ -17,6 +17,8 @@ body::-webkit-scrollbar {
 }
 
 
+
+
 nav{
   color: white;
   bottom: 0;
@@ -351,6 +353,10 @@ nav a i {
   border-radius: 5px;
 }
 
+.edu-details h5 span{
+  color: white;
+}
+
 footer {
   color: #989595;
   font-size: 13px;
@@ -415,9 +421,9 @@ footer {
   }
 
   .hero h3{
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-weight: 100;
-    text-align: justify;
+    text-align: center;
   }
 
   .hack-details h2{
