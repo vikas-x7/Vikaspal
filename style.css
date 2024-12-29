@@ -247,7 +247,7 @@ nav a i {
   width: 400px;
   margin-bottom: 70px;
   overflow: hidden;
-  border: 1px solid rgb(101, 100, 100);
+  /* border: 1px solid rgb(101, 100, 100); */
 }
 
 .project-img img {
