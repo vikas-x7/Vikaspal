@@ -135,6 +135,7 @@ nav a i {
 .side-line {
   border-left: 1px solid rgb(74, 74, 74);
   margin-left: 20px;
+  
 }
 
 .hack-details h2 i {
@@ -391,7 +392,51 @@ footer {
   }
 }
 
+.extension {
+  color: rgb(229, 226, 226);
+  text-align: start;
+  margin-top: 40px;
+}
 
+
+.extension-details img{
+  width: 45px;
+  margin-right: 20px;
+}
+.extension h1 {
+  color: white;
+  font-size: 27px;
+  text-shadow:
+    0 0 21px rgb(255, 255, 255),
+    0 0 100px rgb(255, 255, 255),
+    0 0 0px rgb(255, 255, 255);
+  text-align: start;
+}
+
+
+.extension-details {
+  padding-left: 30px;
+  margin-top: 30.4px;
+}
+
+.extension-details h2 {
+  font-size: 18px;
+  margin-left: -50px;
+  display: flex;
+ 
+  
+
+}
+
+
+.extension-details h5 {
+  color: #ACACAD;
+  font-size: 14.5px;
+  font-weight: 500;
+  display: flex;
+  margin-left: 20px;
+  margin-top: -15px;
+}
 
 
 @media screen and (max-width: 426px) {
