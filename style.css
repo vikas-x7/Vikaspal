@@ -17,7 +17,17 @@ body::-webkit-scrollbar {
 }
 
 
+header{
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  font-size: 7px;
+  margin-bottom: 50px;
+}
 
+header h1{
+  font-weight: 100;
+}
 
 nav{
   color: white;
