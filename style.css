@@ -276,8 +276,9 @@ nav a i {
   margin-bottom: 10px;
 }
 
-.project-del h1 p{
+.project-del h1 {
   color: white;
+  font-size: 19px;
 }
 
 .project-del {
@@ -297,6 +298,7 @@ nav a i {
   border-radius: 10px;
   margin-top: 10px;
   color: white;
+  font-size: 11px;
 }
 
 .education {
