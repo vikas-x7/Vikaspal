@@ -451,9 +451,6 @@ footer {
   font-size: 18px;
   margin-left: -50px;
   display: flex;
- 
-  
-
 }
 
 
@@ -467,23 +464,42 @@ footer {
 }
 
 
+
+#blick {
+  color: green;
+  font-size: 12px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
 @media screen and (max-width: 426px) {
 
   .main-content{
     width: 80%;
   }
-
+  
   .profile-img img {
-    max-width: 90px;
+    max-width: 120px;
   }
   .project-packet{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 150px;
   }
   .project-del {
-    width: 100%;
-    margin-top: -60px;
+    width: 400px;
+    margin-top: -40px;
     padding: 0px;
+    margin-left: 0px;
+    
   }
   .project-del p{
     text-align: start;
@@ -523,6 +539,8 @@ footer {
   .hack-btn{
     margin-top: 10px;
   }
+
+  
    .code-repo{
     padding: 3px 5px;
     font-size: 15px;
@@ -556,4 +574,25 @@ footer {
   .edu-details p{
     font-size: 12px;  
 }
+
+.blink{
+  width: 100%;
+  text-align: start;
+  margin-bottom: 20px;
+}
+.blink{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-size: 2.2vw;
+}
+
+.hero h1{
+  width: 100%;
+  text-align:start;
+}
+.hero h3{
+  text-align: start;
+}
+
+
 }
