@@ -235,19 +235,23 @@ nav a i {
   margin-top: 10px;
   font-weight: 100;
   color: #868689;
+  margin-bottom: 20px;
 
 }
 
 .project-packet {
- 
   color: white;
-  margin-top: 40px;
   display: flex;
   align-items: center;
-  border: 1px solid rgb(51, 50, 50);
+  border: 1px solid #333232;
   padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 40px;
 }
 
+.project-packet:hover{
+  border: 1px solid #5e5e5e;
+}
 .project-img {
   width: 500px;
   overflow: hidden;
@@ -514,7 +518,7 @@ footer {
   .project-packet{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 130px;
+    margin-bottom: 40px;
   }
   .project-del {
     width: 400px;
@@ -627,5 +631,8 @@ footer {
   text-align: start;
 }
 
+.project-img {
+  margin-bottom: 63px;
+}
 
 }
