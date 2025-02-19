@@ -262,6 +262,11 @@ nav a i {
   display: flex;
   margin-top: 20px;
 }
+.project-del {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 .project-del p{
   font-weight: 100;
