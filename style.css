@@ -244,8 +244,8 @@ nav a i {
   display: flex;
   align-items: center;
   border: 1px solid #333232;
-  padding: 15px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 3px;
   margin-bottom: 40px;
 }
 
