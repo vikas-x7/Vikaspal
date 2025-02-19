@@ -156,31 +156,32 @@ nav a i {
   background-color: #f7f7f7;
   padding: 6px 20px;
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
   background: #27272A;
   border-radius: 3px;
+  background: white;
 }
 
 .code-repo {
   background-color: #f7f7f7;
   padding: 6px 20px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   margin-right: 10px;
-  background: #27272A;
   border-radius: 3px;
+  background: white;
 }
 
 .code-repo:hover{
-  background: white;
-  color: black;
+  background: #27272A;
+  color: rgb(255, 255, 255);
   transition: 300ms;
 }
 
 .live:hover{
-  background: white;
-  color: black;
+  background: #27272A;
+  color: rgb(255, 255, 255);
   transition: 300ms;
 }
 
