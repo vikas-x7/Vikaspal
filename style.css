@@ -153,24 +153,23 @@ nav a i {
 }
 
 .live {
-  background-color: #f7f7f7;
+
   padding: 6px 20px;
   text-decoration: none;
   color: #000000;
   background: #27272A;
   border-radius: 3px;
-  background: white;
+  background: #dad9d9;
 }
 
 .code-repo {
-  background-color: #f7f7f7;
   padding: 6px 20px;
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 16px;
   margin-right: 10px;
   border-radius: 3px;
-  background: white;
+  background: #dad9d9;
 }
 
 .code-repo:hover{
