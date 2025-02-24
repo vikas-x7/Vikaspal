@@ -644,5 +644,14 @@ footer {
 .project-img {
   margin-bottom: 63px;
 }
+.project-del p{
+  margin-bottom: 10px;
+}
+.project-del p span{
+  margin-bottom: 1px;
+}
+
+
+
 
 }
