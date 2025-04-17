@@ -153,7 +153,6 @@ nav a i {
 }
 
 .live {
-
   padding: 6px 20px;
   text-decoration: none;
   color: #000000;
@@ -302,7 +301,7 @@ nav a i {
 
 .tech-del span{
   display: flex;
-  padding: 4px 16px;
+  padding: 4px 6px;
   background: #27272A;
   display: inline-block;
   justify-content: center;
@@ -311,7 +310,7 @@ nav a i {
   margin-top: 7px;
   color: rgb(209, 209, 209);
   font-size: 11px;
-  margin-bottom: 9px;
+ 
 }
 
 .education {
@@ -593,7 +592,6 @@ footer {
 
    .live{
     padding: 0px 8px;
-    font-size: 13px;
     display: flex;
     align-items: center;
     gap: 4px;
@@ -601,7 +599,7 @@ footer {
 
    .live i {
     margin-right: 5px;
-    font-size: 16px;
+   
    }
   .edu-details h2 a{
     display: none;
