@@ -133,7 +133,7 @@ nav a i {
 
 .side-line {
   border-left: 1px solid rgb(74, 74, 74);
-  margin-left: 20px;
+  margin-left:10px;
   
 }
 
@@ -516,7 +516,7 @@ footer {
 @media screen and (max-width: 426px) {
 
   .main-content{
-    width: 80%;
+    width: 87%;
   }
   
   .profile-img img {
