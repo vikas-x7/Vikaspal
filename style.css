@@ -483,7 +483,7 @@ footer {
 #blick {
   color: green;
   font-size: 12px;
-  animation: blink 1s infinite;
+  animation: blink 2s infinite;
 }
 
 .extension-details h2 a{
