@@ -10,26 +10,26 @@
 </head>
 <body class="bg-[#010204] flex justify-center text-white ">
 
-  <section class="flex flex-col w-[700px]">
+  <section class="flex flex-col w-[600px]">
 
 
 
   <section class="mt-10 flex items-center justify-center px-4">
-    <div class="flex gap-5 md:gap-10">
+    <div class="flex gap-2 md:gap-5">
        <div class="mt-4">
-        <img src="https://avatars.githubusercontent.com/u/113900393?v=4"  class="w-[200px]  md:w-32 object-cover rounded-full ">
+        <img src="https://avatars.githubusercontent.com/u/113900393?v=4"  class="w-[200px]  md:w-[160px] object-cover rounded-full ">
       </div>
       
       <!-- Text Section -->
       <div class=" md:text-left">
 
-        <h1 class="text-2xl md:text-4xl  font-bold mb-4">
+        <h1 class="text-2xl md:text-4xl  font-bold mt-4">
           Hi, I'm <span class="text-white">Vikas 🍃</span> 
         </h1>
         <p class="text-gray-300 md:text-xl max-w-[500px] mb-[0px]">
           Software Engineer turned Entrepreneur. I love building things and helping people. Very activer.
         </p>
-        <p class="blink text-[10px] text-gray-300">  Available for opportunity <i class="ri-circle-fill" id="blick"></i> </p>
+        <p class="blink text-[10px] text-gray-300 p-[4px] border border-gray-700 rounded-[4px] inline-flex gap-1 mt-2"> <i class="ri-circle-fill" id="blick"></i>   Available for opportunity </p>
        
       </div>
 
@@ -39,76 +39,86 @@
     </div> 
   </section>
 
-  <section class="mt-10 flex items-center justify-center px-4">
+  <section class="mt-5 flex items-center justify-center px-4">
       <div>
-          <p>About</p>
-          <p>My world revolves around full-stack AI application development, where I integrate cutting-edge AI with frontend and backend expertise to build intelligent, scalable solutions. As a self-taught developer, I specialize in transforming ideas into production-ready AI-powered applications. Driven by curiosity, I create AI-driven solutions to real-world challenges and have won 6 hackathons by solving complex problems with innovation and speed. I continuously explore new technologies to stay ahead in this evolving industry.</p>
+         <h2 class="text-2xl font-bold ">About</h2>
+          <p class="text-gray-300">My world revolves around full-stack AI application development, where I integrate cutting-edge AI with frontend and backend expertise to build intelligent, scalable solutions. As a self-taught developer, I specialize in transforming ideas into production-ready AI-powered applications. Driven by curiosity, </p>
         </div>
 
   </section>
   
-  <section>
-    <img class="mt-10 rounded-[5px]" src="./image/githubcontry.png" alt="">
-  </section>
 
    <section class="px-4">
-     <h2 class="text-2xl font-bold mb-6 mt-10">Work Experience</h2>
-  <div x-data="{ open: false }" class="mb-4 border-b border-gray-700 pb-4">
-    <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
-      <div class="flex gap-4 items-center">
-        <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="w-10 h-10 rounded-full bg-white p-1">
+     <h2 class="text-2xl font-bold mb-2 mt-5">Work Experience</h2>
+  <div x-data="{ open: false }" class="pb-4">
+    <div class="flex justify-between items-start cursor-pointer " @click="open = !open">
+      <div class="flex gap-4 items-center ">
+        <img src="/image/ilegal.png" alt="Shopify" class="w-10 h-10 rounded-[5px] bg-white p-1">
         <div>
-          <h3 class="font-semibold text-lg">Shopify</h3>
-          <p class="text-sm text-gray-400">Software Engineer</p>
+          <h3 class="font-semibold text-lg">ilegallearn</h3>
+          <p class="text-sm text-gray-400">AI Engineer intern</p>
         </div>
       </div>
-      <span class="text-sm text-gray-400">January 2021 - April 2021</span>
+        <div>
+        <p class="text-sm text-gray-400">January 2021 - April 2021</p>
+        <p class="text-sm text-gray-400">Remote</p>
+        </div>
     </div>
   </div>
-  <div x-data="{ open: false }" class="mb-4 border-b border-gray-700 pb-4">
+  <div x-data="{ open: false }" class="pb-4">
     <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
       <div class="flex gap-4 items-center">
-        <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="w-10 h-10 rounded-full bg-white p-1">
+        <img src="./image/donezo.png" alt="Shopify" class="w-10 h-10 rounded-[5px]">
         <div>
-          <h3 class="font-semibold text-lg">Shopify</h3>
-          <p class="text-sm text-gray-400">Software Engineer</p>
+          <h3 class="font-semibold text-lg">Taskify</h3>
+          <p class="text-sm text-gray-400">Full-stack developer</p>
         </div>
       </div>
-      <span class="text-sm text-gray-400">January 2021 - April 2021</span>
+      <div>
+        <p class="text-sm text-gray-400">January 2021 - April 2021</p>
+        <p class="text-sm text-gray-400">Remote </p>
+        </div>
+     
     </div>
   </div>
+
    </section>
+
+     <section>
+    <img class="mt-5 rounded-[5px]" src="./image/githubcontry.png" alt="">
+  </section>
+
    
   <section class="px-4">
-    <h2 class="text-2xl font-bold mb-6 mt-10">Skills </h2>
+    <h2 class="text-2xl font-bold mb-3 mt-5">Skills </h2>
      <div class="skill-col">
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/python.png" class="w-4" alt="Python Icon">Python</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/C.png" class="w-4" alt="Python Icon">C</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/c-.png" class="w-4" alt="Python Icon">C++</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/js.png" class="w-4" alt="Python Icon">Javascript</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/typescript.png" class="w-4" alt="Pytho Icon">Typescript</a>
-      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/HTML5.png" class="w-4">HTML</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/HTML5.png" class="w-4">HTML</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/CSS3.png" class="w-4">CSS</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/programing.png" class="w-4" alt="Pytho Icon">Node js</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Express.png" class="w-4 bg-white " alt="Pytho Icon">Express js</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/MongoDB.png" class="w-4" alt="Pytho Icon">MongoDB</a>
-       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/MySQL.png" class="w-4" alt="Pytho Icon">My sql</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/MySQL.png" class="w-4 " alt="Pytho Icon">My sql</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/React.png" class="w-4" alt="Pytho Icon">React</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Flask.png" class="w-4 bg-white">Flask</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/FastAPI.png" class="w-4">FastAPI</a>
-       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Django.png" class="w-4">Django</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Django.png" class="w-4 ">Django</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Firebase.png" class="w-4">Firebase</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Tailwind CSS.png" class="w-4">Tailwind CSS</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Bootstrap.png" class="w-4">Bootstrap</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Streamlit.png" class="w-4">Streamlit</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Redis.png" class="w-4">Radis</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Visual Studio Code (VS Code).png" class="w-4">Vs code </a>
-       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/GitHub.png" class="w-4"> Github  </a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/GitHub.png" class="w-4 bg-white"> Github  </a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/GitLab.png" class="w-4"> Gitlab  </a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Vercel.png" class="w-4 bg-white"> Vercel  </a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/render.png" class="w-4 bg-white">Render</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/Postman.png" class="w-4"> Postman  </a>
-       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white  mb-[5px]"><img src="./image/NPM.png" class="w-4"> NPM </a>
+       
 
       
 
@@ -142,6 +152,40 @@
     </div>
   </div>
    </section>
+
+
+     <section class="px-4">
+     <h2 class="text-2xl font-bold mb-6 mt-10">Education</h2>
+  <div x-data="{ open: false }" class="mb-4 border-b border-gray-700 pb-4">
+    <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
+      <div class="flex gap-4 items-center">
+        <!-- <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="w-10 h-10 rounded-full bg-white p-1"> -->
+        <i class="ri-school-fill"></i>
+        <div>
+          <h3 class="font-semibold text-lg">Shopify</h3>
+          <p class="text-sm text-gray-400">Software Engineer</p>
+        </div>
+      </div>
+      <span class="text-sm text-gray-400">January 2021 - April 2021</span>
+    </div>
+  </div>
+  <div x-data="{ open: false }" class="mb-4 border-b border-gray-700 pb-4">
+    <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
+      <div class="flex gap-4 items-center">
+        <!-- <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="w-10 h-10 rounded-full bg-white p-1"> -->
+         <i class="ri-graduation-cap-fill"></i>
+        <div>
+          <h3 class="font-semibold text-lg">Shopify</h3>
+          <p class="text-sm text-gray-400">Software Engineer</p>
+        </div>
+      </div>
+      <span class="text-sm text-gray-400">January 2021 - April 2021</span>
+    </div>
+  </div>
+   </section>
+
+
+
   </section>
 </body>
 </html>
