@@ -6,9 +6,9 @@
   <title>Vikas Pal </title>
   <script src="https://cdn.tailwindcss.com"></script>
    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
 </head>
-<body class="bg-black text-white ">
+<body class="bg-[#010204] flex justify-center text-white ">
 
   <section class="flex flex-col w-[700px]">
 
@@ -17,14 +17,14 @@
   <section class="mt-10 flex items-center justify-center px-4">
     <div class="flex gap-5 md:gap-10">
        <div class="mt-4">
-        <img src="https://avatars.githubusercontent.com/u/113900393?v=4" alt="Dillion" class="w-[200px]  md:w-32 object-cover rounded-full ">
+        <img src="https://avatars.githubusercontent.com/u/113900393?v=4"  class="w-[200px]  md:w-32 object-cover rounded-full ">
       </div>
       
       <!-- Text Section -->
       <div class=" md:text-left">
 
         <h1 class="text-2xl md:text-4xl  font-bold mb-4">
-          Hi, I'm <span class="text-white">Vikas</span> 
+          Hi, I'm <span class="text-white">Vikas 🍃</span> 
         </h1>
         <p class="text-gray-300 md:text-xl max-w-[500px] mb-[0px]">
           Software Engineer turned Entrepreneur. I love building things and helping people. Very activer.
@@ -45,9 +45,11 @@
           <p>My world revolves around full-stack AI application development, where I integrate cutting-edge AI with frontend and backend expertise to build intelligent, scalable solutions. As a self-taught developer, I specialize in transforming ideas into production-ready AI-powered applications. Driven by curiosity, I create AI-driven solutions to real-world challenges and have won 6 hackathons by solving complex problems with innovation and speed. I continuously explore new technologies to stay ahead in this evolving industry.</p>
         </div>
 
-      </section>
-      
-   <img class="mt-10 rounded-[5px]" src="./image/githubcontry.png" alt="">
+  </section>
+  
+  <section>
+    <img class="mt-10 rounded-[5px]" src="./image/githubcontry.png" alt="">
+  </section>
 
    <section class="px-4">
      <h2 class="text-2xl font-bold mb-6 mt-10">Work Experience</h2>
@@ -77,46 +79,45 @@
   </div>
    </section>
    
-      <section class="px-4">
-     <h2 class="text-2xl font-bold mb-6 mt-10">Skills </h2>
+  <section class="px-4">
+    <h2 class="text-2xl font-bold mb-6 mt-10">Skills </h2>
+     <div class="skill-col">
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white"><img src="./image/python.png" class="w-4" alt="Python Icon">Python</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white"><img src="./image/c-.png" class="w-4" alt="Python Icon">C/C++</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white"><img src="./image/js.png" class="w-4" alt="Python Icon">Javascript</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white"><img src="./image/typescript.png" class="w-4" alt="Pytho Icon">Typescript</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white"><img src="./image/programing.png" class="w-4" alt="Pytho Icon">Node js</a>
+      
 
-  <div class="skill-col">
-        <p>Python</p>
-        <p>C/C++</p>
-        <p>JavaScript</p>
-        <p>TypeScript</p>
-        <p>Node.js</p>
-        <p>Express.js</p>
-        <p>Flask</p>
-        <p>MongoDB</p>
-        <p>HTML & CSS</p>
-        <p>Tailwind CSS</p>
-        <p>EJS</p>
-        <p>Bootstrap</p>
-        <p>Prisma</p>
-        <p>Multer</p>
-        <p>REST APIs</p>
-        <p>Hugging Face</p>
-        <p>Ollama</p>
-        <p>ShadCN</p>
-        <p>Magic UI</p>
-        <p>Locomotive.js</p>
-        <p>Redis</p>
-        <p>LangChain</p>
-        <p>WebSocket</p>
-        <p>Render</p>
-        <p>Vercel</p>
-        <p>SQL</p>
-        <p>Streamlit</p>
-        <p>Git & GitHub</p>
-        <p>GitLab</p>
-        <p>Postman</p>
-        <p>Firebase</p>
-        <p>WebRTC</p>
-        <p>Gradio</p>
-        <p>Mermaid.js</p>
-        <p>D3.js</p>
     </div>
+  </section>
+
+     <section class="px-4">
+     <h2 class="text-2xl font-bold mb-6 mt-10">Hackathons</h2>
+  <div x-data="{ open: false }" class="mb-4 border-b border-gray-700 pb-4">
+    <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
+      <div class="flex gap-4 items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="w-10 h-10 rounded-full bg-white p-1">
+        <div>
+          <h3 class="font-semibold text-lg">Shopify</h3>
+          <p class="text-sm text-gray-400">Software Engineer</p>
+        </div>
+      </div>
+      <span class="text-sm text-gray-400">January 2021 - April 2021</span>
+    </div>
+  </div>
+  <div x-data="{ open: false }" class="mb-4 border-b border-gray-700 pb-4">
+    <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
+      <div class="flex gap-4 items-center">
+        <img src="https://cdn.worldvectorlogo.com/logos/shopify.svg" alt="Shopify" class="w-10 h-10 rounded-full bg-white p-1">
+        <div>
+          <h3 class="font-semibold text-lg">Shopify</h3>
+          <p class="text-sm text-gray-400">Software Engineer</p>
+        </div>
+      </div>
+      <span class="text-sm text-gray-400">January 2021 - April 2021</span>
+    </div>
+  </div>
    </section>
   </section>
 </body>
