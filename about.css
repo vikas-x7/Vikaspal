@@ -1,3 +1,6 @@
+body{
+  position: relative;
+}
 .tech-icon{
   color: white;
   background: rgba( 255, 255, 255, 0 );
@@ -20,3 +23,16 @@
     opacity: 0;
   }
 }
+
+
+  .blinking-cursor {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: rgb(249, 249, 249);
+    animation: blink-cursor 1s step-start infinite;
+  }
+
+  @keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }

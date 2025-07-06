@@ -7,8 +7,13 @@
   <script src="https://cdn.tailwindcss.com"></script>
    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="about.css">
+    <script src="./script.js"></script>
 </head>
+
+
 <body class="bg-[#010204] flex justify-center text-white ">
+
+
 
   <section class="flex flex-col w-[650px]">
 
@@ -27,22 +32,25 @@
           Hola! I'm <span class="text-white">Vikas Pal </span> 🌿
            
         </h1>
-        <p class="text-gray-300 md:text-xl max-w-[500px] mb-[0px]">
-          Software Engineer turned Entrepreneur. I love building things and helping people. Very.
-        </p>
-        <p class=" text-[18px] text-gray-300 px-[9px] py-[-3px] border border-gray-700 rounded-[6px] inline-flex items-center justify-center gap-2 mt-2
+<p class="text-gray-300 md:text-xl max-w-[500px] mb-[0px]">
+     Software Engineer who loves building fast, scalable, and intelligent products — I do
+  <span id="typing" class="inline pl-1"></span><span class="blinking-cursor">|</span>
+</p>
+
+
+
+
+<p class=" text-[18px] px-[9px] py-[-3px] border border-gray-700 rounded-[6px] inline-flex items-center justify-center gap-2 mt-2
          "> 
-         <i class="ri-mail-unread-line"></i>
-         <i class="ri-github-fill cursor-pointer "></i>
-         <i class="ri-linkedin-box-fill cursor-pointer "></i>
-         <i class="ri-twitter-fill cursor-pointer "></i>
-         <i class="ri-file-3-line cursor-pointer"></i>
-    
-          
-        </p>
+         <i class="ri-mail-unread-line text-gray-400 "></i>
+         <i class="ri-github-fill cursor-pointer text-gray-400 "></i>
+         <i class="ri-linkedin-box-fill cursor-pointer text-gray-400  "></i>
+         <i class="ri-twitter-fill cursor-pointer text-gray-400  "></i>
+         <i class="ri-file-3-line cursor-pointer text-gray-400 "></i>
+</p>
       
        
-      </div>
+</div>
 
       <!-- Image Section -->
      
@@ -241,7 +249,7 @@
     I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
   </p>
 
-  <div class="flex text-white border border-gray-700 rounded-lg p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10">
+  <div class="flex text-white border border-gray-700 rounded-[2px] p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10">
 
   <!-- Left Image Section -->
   <div class="w-full md:w-[450px]">
@@ -273,7 +281,7 @@
   </div>
 
 </div>
-  <div class="flex text-white border border-gray-700 rounded-lg p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10">
+  <div class="flex text-white border border-gray-700 rounded-[2px] p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10">
 
   <!-- Left Image Section -->
   <div class="w-full md:w-[450px]">
@@ -305,7 +313,7 @@
   </div>
 
 </div>
-  <div class="flex text-white border border-gray-700 rounded-lg p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10">
+  <div class="flex text-white border border-gray-700 rounded-[2px] p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10">
 
   <!-- Left Image Section -->
   <div class="w-full md:w-[450px]">
@@ -337,7 +345,7 @@
   </div>
 
 </div>
-  <div class="flex text-white border border-gray-700 rounded-lg p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-0">
+  <div class="flex text-white border border-gray-700 rounded-[2px] p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-0">
 
   <!-- Left Image Section -->
   <div class="w-full md:w-[450px]">
@@ -408,23 +416,50 @@
    </section>
 
 
-   <section class="flex items-center justify-center mt-[90px] mb-[140px]">
+   <section class="flex items-center justify-center px-[30px] mt-[90px] mb-[140px]">
     <div class="text-center">
       <a class="text-[18px] text-gray-300 px-[9px] py-[-3px] border border-gray-700 rounded-[6px] inline-flex items-center justify-center gap-2 mt-2"> <i class="ri-circle-fill" id="blick"></i>Get in touch</a>
    
-      <h2 class="text-3xl md:text-4xl font-bold mb-4 relative text-white glow-text">
+    <h2 class="text-3xl md:text-4xl font-bold mb-2 relative text-white glow-text">
      Available for opportunity 
   </h2>
       <p class="text-gray-400">
-       Feel free to reach out by sending me an email at: vikaspal968562@gmail.com or give me a call at +91-9131953741 , I’m always open to meaningful conversations.
+       Feel free to reach out by sending me an email at:  vikaspal968562@gmail.com  or  give me a call at +91-9131953741  , I’m always open to meaningful conversations.
       </p>
-    </div>
-    
+    </div>   
    </section>
 
 
-
-      <footer class="text-center text-gray-500">Made by Sphinx❤️ All rights © reserved </footer>
-  </section>
+<footer class="text-center text-gray-500">Made by Sphinx❤️ All rights © reserved </footer>
+</section>
 </body>
+
+<script>
+  const roles = ["backend", "frontend", "fullstack", "AI integration"];
+  let roleIndex = 0;
+  let charIndex = 0;
+  let typingElement = document.getElementById("typing");
+  let isDeleting = false;
+
+  function typeEffect() {
+    const currentRole = roles[roleIndex];
+    const displayedText = isDeleting
+      ? currentRole.slice(0, --charIndex)
+      : currentRole.slice(0, ++charIndex);
+
+    typingElement.textContent = displayedText;
+
+    if (!isDeleting && charIndex === currentRole.length) {
+      setTimeout(() => (isDeleting = true), 1000);
+    } else if (isDeleting && charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+
+    setTimeout(typeEffect, isDeleting ? 60 : 100);
+  }
+
+  document.addEventListener("DOMContentLoaded", typeEffect);
+</script>
+
 </html>
