@@ -2,7 +2,7 @@
 
     document.addEventListener("visibilitychange", function () {
       if (document.hidden) {
-        document.title = "🌿Come back! ";
+        document.title = "🌿Come hereeeeeee! ";
       } else {
         document.title = originalTitle;
       }
