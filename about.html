@@ -5,20 +5,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Vikas Pal 🌿  </title>
   <link rel="shortcut icon" href="./image/favicon1.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&family=Teko:wght@300..700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="about.css">
   <script src="./script.js"></script>
+
+  <style>
+
+    body::-webkit-scrollbar {
+  display: none;
+}
+
+.loader-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.loader-div.hide {
+  transform: scale(1.3);  /* Zoom out */
+  opacity: 0;
+}
+
+
+/* .loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  white-space: pre;
+  font-size: 30px;
+  line-height: 1.2em;
+  height:1.2em;
+  overflow: hidden;
+}
+.loader:before {
+  content:"Loading...\A⌰oading...\A⌰⍜ading...\A⌰⍜⏃ding...\A⌰⍜⏃⎅ing...\A⌰⍜⏃⎅⟟ng...\A⌰⍜⏃⎅⟟⋏g...\A⌰⍜⏃⎅⟟⋏☌...\A⌰⍜⏃⎅⟟⋏☌⟒..\A⌰⍜⏃⎅⟟⋏☌⟒⏁.\A⌰⍜⏃⎅⟟⋏☌⟒⏁⋔"; 
+  white-space: pre;
+  display: inline-block;
+  animation: l39 1s infinite steps(11) alternate;
+}
+
+@keyframes l39 {
+  100%{transform: translateY(-100%)}
+} */
+
+/* HTML: <div class="loader"></div> */
+/* .loader {
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 30px;
+  padding-bottom: 8px;
+  background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+  animation: l2 2s linear infinite;
+}
+.loader:before {
+  content:"Loading..."
+}
+@keyframes l2 {to{background-size: 100% 3px}} */
+  </style>
 </head>
   
 
 <body class="bg-[#010204] flex justify-center text-white ">
+
+<div class="loader-div" id="loader">
+  <div class="loader"></div> 
+</div>
 
 
   <section class="flex flex-col w-[650px]">
@@ -35,7 +102,7 @@
       <div class="text-left w-full  ">
         <h1 class=" text-4xl font-bold mt-4 flex text-[#E5E5E5] font-[Gabarito] "> 
              Hola! I'm  Vikas Pal🌿</h1>
-      <p class="text-[16px] leading-[1.2] mt-1 text-[#FAFAFA] font-[Rubik]">
+      <p class="text-[16px] leading-[1.2] mt-1 text-[#D1D5Da] font-[Rubik]">
     Software Engineer — no bullshit. I build fast, scalable, Clean design and intelligent products. I do<span id="typing" class="inline pl-1"></span><span class="blinking-cursor">|</span>
 </p>
 
@@ -45,8 +112,8 @@
 <p class="md:text-[15px] px-[9px] py-[-3px] border-[1px] border-[#232323] rounded-[3px] inline-flex items-center justify-center gap-2 mt-2 bg-[#171717]"> 
          <i class="ri-mail-unread-line  cursor-pointer text-[#a5a5a5] hover:text-white"></i>
          <i class="ri-github-fill cursor-pointer text-[#a5a5a5] hover:text-white "></i>
-         <i class="ri-linkedin-box-fill cursor-pointer text-[#a5a5a5] hover:text-white "></i>
-         <i class="ri-twitter-fill cursor-pointer text-[#a5a5a5] hover:text-white"></i>
+         <i class="ri-linkedin-box-fill cursor-pointer text-[#a5a5a5] hover:text-[#0072B2] "></i>
+         <i class="ri-twitter-fill cursor-pointer text-[#a5a5a5] hover:text-[#0072B2]"></i>
          <i class="ri-file-3-line cursor-pointer text-[#a5a5a5] hover:text-white "></i>
 </p>
       
@@ -62,7 +129,7 @@
   <section class="mt-5 flex items-center justify-center px-4">
       <div>
          
-         <h2 class="text-2xl font-medium flex items-center justify-between font-[Gabarito]  text-[#D1D5Da]">  About   <img class=" w-[40px] ml-4 float-right mr-4" src="./image/source.gif" alt=""> </h2>
+         <h2 class="text-2xl font-medium flex items-center justify-between font-[Gabarito]  text-[#F3F3F3]">  About   <img class=" w-[40px] ml-4 float-right mr-4" src="./image/source.gif" alt=""> </h2>
           <p class="text-[#A1A1A1] font-[Rubik]  ">My world revolves around full-stack AI application development, where I integrate cutting-edge AI with frontend and backend expertise to build intelligent, scalable solutions. As a self-taught developer, I specialize in transforming ideas into production-ready AI-powered applications. Driven by curiosity,  
           </p>
         </div>
@@ -72,7 +139,7 @@
 
    <section class="px-4 mt-10">
       
-     <h2 class="text-2xl font-medium mb-2 font-[Gabarito] text-[#D1D5Da]">Work Experience</h2>
+     <h2 class="text-2xl font-medium mb-2 font-[Gabarito] text-[#F3F3F3]">Work Experience</h2>
        <!-- <div x-data="{ open: false }" class="pb-4">
     <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
       <div class="flex gap-4 items-center ">
@@ -105,33 +172,33 @@
      
     </div>
   </div> -->
-  <div x-data="{ open: false }" class="pb-4 font-[Gabarito]">
+  <div x-data="{ open: false }" class="pb-4 ">
     <div class="flex justify-between items-start cursor-pointer " @click="open = !open">
       <div class="flex gap-4 items-center ">
         <img src="/image/ilegal.png" alt="Shopify" class="w-10 h-10 rounded-[5px] bg-white p-1">
-        <div>
+        <div class="font-[Gabarito]">
           <h3 class="font-semibold text-lg text-[#D1D5DB]">ilegallearn</h3>
           <p class="text-sm text-gray-400 text-[#A1A1A1]">AI Engineer intern</p>
         </div>
       </div>
-        <div class="text-[#A1A1A1]">
-        <p class="text-sm text-gray-400  ">January 2021 - April 2021</p>
-        <p class="text-[11px] text-gray-400 text-end mt-2">Remote</p>
+        <div class="text-[#A1A1A1] font-[Roboto Flex]">
+        <p class="text-sm">Feb 2025 - May 2025</p>
+        <p class="text-[11px] text-end mt-2 font-[100] ">Remote</p>
         </div>
     </div>
   </div>
-  <div x-data="{ open: false }" class="pb-4 font-[Gabarito]">
+  <div x-data="{ open: false }" class="pb-4 ">
     <div class="flex justify-between items-start cursor-pointer" @click="open = !open">
       <div class="flex gap-4 items-center">
         <img src="./image/enso.png" alt="Shopify" class="w-10 h-10 rounded-[5px] bg-white border border-gray-700 p-1">
-        <div >
+        <div class="font-[Gabarito]" >
           <h3 class="font-semibold text-lg text-[#D1D5DB]">Taskify</h3>
           <p class="text-sm text-gray-400">Full-stack developer</p>
         </div>
       </div>
-      <div class="text-[#A1A1A1]" >
-        <p class="text-sm text-gray-400">January 2021 - April 2021</p>
-        <p class="text-[11px] text-gray-400 text-end mt-2 font-[Rubik]">Remote </p>
+      <div class="text-[#A1A1A1] font-[Roboto Flex]" >
+        <p class="text-sm ">Sept 2024 - Dec 2024</p>
+        <p class="text-[11px]  text-end mt-2 font-[100]">Remote </p>
         </div>
      
     </div>
@@ -144,7 +211,7 @@
 
    
   <section class="px-4">
-    <h2 class="text-2xl font-bold mb-3 mt-5 text-[#D1D5Da] font-[Gabarito] ">Skills </h2>
+    <h2 class="text-2xl font-bold mb-3 mt-5 text-[#F3F3F3] font-[Gabarito]  font-medium ">Skills </h2>
      <div class="skill-col font-[Gabarito] font-[100] ">
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px] "><img src="./image/python.png" class="w-4" alt="Python Icon ">Python</a>
        <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/C.png" class="w-4" alt="Python Icon">C</a>
@@ -472,31 +539,60 @@
 </body>
 
 <script>
-  const roles = ["backend", "frontend", "fullstack", "AI integration"];
-  let roleIndex = 0;
-  let charIndex = 0;
-  let typingElement = document.getElementById("typing");
-  let isDeleting = false;
+const roles = ["backend", "frontend", "fullstack", "AI integration"];
+let roleIndex = 0;
+let charIndex = 0;
+let typingElement = document.getElementById("typing");
+let isDeleting = false;
 
-  function typeEffect() {
-    const currentRole = roles[roleIndex];
-    const displayedText = isDeleting
-      ? currentRole.slice(0, --charIndex)
-      : currentRole.slice(0, ++charIndex);
+function typeEffect() {
+  const currentRole = roles[roleIndex];
+  const displayedText = isDeleting
+    ? currentRole.slice(0, --charIndex)
+    : currentRole.slice(0, ++charIndex);
 
-    typingElement.textContent = displayedText;
+  typingElement.textContent = displayedText;
 
-    if (!isDeleting && charIndex === currentRole.length) {
-      setTimeout(() => (isDeleting = true), 1000);
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      roleIndex = (roleIndex + 1) % roles.length;
-    }
-
-    setTimeout(typeEffect, isDeleting ? 60 : 100);
+  if (!isDeleting && charIndex === currentRole.length) {
+    setTimeout(() => (isDeleting = true), 1000);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    roleIndex = (roleIndex + 1) % roles.length;
   }
 
-  document.addEventListener("DOMContentLoaded", typeEffect);
+  setTimeout(typeEffect, isDeleting ? 60 : 100);
+}
+
+// ✅ Wait for page load
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+
+  // Disable scroll
+  document.body.style.overflow = 'hidden';
+  loader.style.display = 'flex';
+
+  setTimeout(() => {
+    loader.classList.add('hide');
+
+    // After loader transition ends
+    setTimeout(() => {
+      loader.style.display = 'none';
+
+      // Enable scroll
+      document.body.style.overflow = 'auto';
+
+      // Start typing
+      typeEffect();
+    }, 1000); // match CSS transition time
+  }, 100); // Initial delay
+});
+
+
+
+
+
+
+
 </script>
 
 <script src="./script.js"></script>
