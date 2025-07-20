@@ -142,7 +142,7 @@
         <img src="/image/ilegal.png" alt="Shopify" class="w-10 h-10 rounded-[5px] bg-white p-1">
         <div class="font-[Gabarito]">
           <h3 class="font-semibold text-lg text-[#D1D5DB]">ilegallearn</h3>
-          <p class="text-sm text-gray-400 text-[#A1A1A1]">AI Engineer intern</p>
+          <p class="text-sm  text-[#A1A1A1]">AI Engineer intern</p>
         </div>
       </div>
         <div class="text-[#A1A1A1] font-[Roboto Flex]">
@@ -157,7 +157,7 @@
         <img src="./image/enso.png" alt="Shopify" class="w-10 h-10 rounded-[5px] bg-white border border-gray-700 p-1">
         <div class="font-[Gabarito]" >
           <h3 class="font-semibold text-lg text-[#D1D5DB]">Taskify</h3>
-          <p class="text-sm text-gray-400">Full-stack developer</p>
+          <p class="text-sm text-[#A1A1A1]">Full-stack developer</p>
         </div>
       </div>
       <div class="text-[#A1A1A1] font-[Roboto Flex]" >
@@ -297,7 +297,7 @@
   <h2 class="text-4xl md:text-5xl font-bold mb-4 relative inline-block text-white glow-text  font-[Gabarito]">
     My Projects
   </h2>
-  <p class="text-gray-400 max-w-xl text-base md:text-lg font-[Rubik]">
+  <p class="text-[#A1A1A1] max-w-xl text-base md:text-lg font-[Rubik]">
     I've worked on a variety of projects, from simple websites to complex web applications. Here are a few of my favorites.
   </p>
 
@@ -310,10 +310,78 @@
 
   <!-- Right Content Section -->
   <div class="w-full md:w-[320px] flex flex-col text-start">
-    <h2 class="text-[25px] font-semibold">Nuvaria</h2>
-    <p class="text-gray-300 text-[13px]">
-      Nuvaria is an AI web app that creates amazing images read more.. 
+    <h2 class="text-[25px] font-semibold">Nexora</h2>
+   <!-- Trigger link -->
+<!-- Trigger link -->
+<p class="text-gray-300 text-[13px]">
+  Nuvaria is an AI web app that creates amazing 
+  <span onclick="openModal()" class="cursor-pointer text-[#5966F3]">more..</span>
+</p>
+
+<!-- Modal content -->
+<!-- Modal Overlay -->
+<div id="popupModal" class="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden transition-opacity duration-300 ease-out">
+  <!-- Modal Box -->
+  <div id="popupContent" class="bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out">
+    <!-- Close Button -->
+    <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal()">
+      &times;
+    </button>
+    
+    <!-- Title -->
+    <h2 class="text-xl font-bold mb-2 text-center">About Nuvaria</h2>
+
+    <!-- Content -->
+    <p class="text-sm text-center">
+      Nuvaria is an advanced AI web application designed to generate stunning images and videos using state-of-the-art machine learning models...
     </p>
+  </div>
+</div>
+
+
+<!-- Script -->
+
+<script>
+  function openModal() {
+    console.log("Modal opened");
+    document.getElementById('popupModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // disable scroll
+
+      const modal = document.getElementById("popupModal");
+  const content = document.getElementById("popupContent");
+  modal.classList.remove("hidden");
+
+  // Force reflow to enable animation
+  void content.offsetWidth;
+
+  content.classList.remove("scale-100", "opacity-0");
+  content.classList.add("scale-100", "opacity-100");
+  }
+
+function closeModal() {
+  console.log("Modal closed");
+  document.body.style.overflow = 'auto'; // enable scroll
+
+  const modal = document.getElementById("popupModal");
+  const content = document.getElementById("popupContent");
+
+  // Animate content
+  content.classList.remove("scale-100", "opacity-100");
+  content.classList.add("scale-95", "opacity-0");
+
+  // Hide modal after animation completes (match duration-300)
+  setTimeout(() => {
+    modal.classList.add("hidden");
+  }, 300);
+}
+
+</script>
+
+
+
+
+
+
 
     <!-- Tags -->
     <div class="flex flex-wrap gap-2 mt-2">
@@ -564,7 +632,7 @@ window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
 
   // Disable scroll
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';  
   loader.style.display = 'flex';
 
   setTimeout(() => {
