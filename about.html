@@ -65,7 +65,7 @@
       <!-- Text Section -->
       <div class="text-left w-full  ">
         <h1 class=" text-4xl font-bold mt-4 flex text-[#E5E5E5] font-[Gabarito] "> 
-             Hola! I'm  Vikas Pal <span class="text-[20px]">🍃</span> </h1>
+             Hola! I'm  Vikas Pal <span class="text-[30px]"> 🪽</span> </h1>
       <p class="text-[16px] leading-[1.2] mt-1 text-[#D1D5Da] font-[Rubik]">
     Software Engineer — no bullshit. I build fast, scalable, Clean design and intelligent products. I do<span id="typing" class="inline pl-1"></span><span class="blinking-cursor">|</span>
 </p>
@@ -306,6 +306,106 @@
   <!-- Left Image Section -->
   <div class="w-full md:w-[450px]">
     <img src="/image/nexora.png" alt="Project Screenshot" class="">
+  </div>
+
+  <!-- Right Content Section -->
+  <div class="w-full md:w-[320px] flex flex-col text-start">
+    <h2 class="text-[25px] font-semibold">Nexora</h2>
+   <!-- Trigger link -->
+<!-- Trigger link -->
+<p class="text-gray-300 text-[13px]">
+  Nuvaria is an AI web app that creates amazing 
+  <span onclick="openModal()" class="cursor-pointer text-[#5966F3]">more..</span>
+</p>
+
+<!-- Modal content -->
+<!-- Modal Overlay -->
+<div id="popupModal" class="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden transition-opacity duration-300 ease-out">
+  <!-- Modal Box -->
+  <div id="popupContent" class="bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out">
+    <!-- Close Button -->
+    <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal()">
+      &times;
+    </button>
+    
+    <!-- Title -->
+    <h2 class="text-xl font-bold mb-2 text-center">About Nuvaria</h2>
+
+    <!-- Content -->
+    <p class="text-sm text-center">
+      Nuvaria is an advanced AI web application designed to generate stunning images and videos using state-of-the-art machine learning models...
+    </p>
+  </div>
+</div>
+
+
+<!-- Script -->
+
+<script>
+  function openModal() {
+    console.log("Modal opened");
+    document.getElementById('popupModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // disable scroll
+
+      const modal = document.getElementById("popupModal");
+  const content = document.getElementById("popupContent");
+  modal.classList.remove("hidden");
+
+  // Force reflow to enable animation
+  void content.offsetWidth;
+
+  content.classList.remove("scale-100", "opacity-0");
+  content.classList.add("scale-100", "opacity-100");
+  }
+
+function closeModal() {
+  console.log("Modal closed");
+  document.body.style.overflow = 'auto'; // enable scroll
+
+  const modal = document.getElementById("popupModal");
+  const content = document.getElementById("popupContent");
+
+  // Animate content
+  content.classList.remove("scale-100", "opacity-100");
+  content.classList.add("scale-95", "opacity-0");
+
+  // Hide modal after animation completes (match duration-300)
+  setTimeout(() => {
+    modal.classList.add("hidden");
+  }, 300);
+}
+
+</script>
+
+
+
+
+
+
+
+    <!-- Tags -->
+    <div class="flex flex-wrap gap-2 mt-2">
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/python.png" class="w-4" alt="Python Icon">Python</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/C.png" class="w-4" alt="Python Icon">C</a>
+       <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/c-.png" class="w-4" alt="Python Icon">C++</a>
+  
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-6 mt-[10px]">
+      <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-white text-black px-4">Code</a>
+      <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-white text-black px-4">Website</a>
+    
+    
+    </div>
+  </div>
+
+</div>
+  <div class="flex text-white border border-gray-700 rounded-[2px] p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
+
+  <!-- Left Image Section -->
+  <div class="w-full md:w-[450px]">
+    <img src="/image/Screenshot 2025-07-20 173032.png" alt="Project Screenshot" class="">
   </div>
 
   <!-- Right Content Section -->
