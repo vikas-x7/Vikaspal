@@ -71,7 +71,7 @@
       <div>
         <h2 class="text-2xl font-medium flex items-center justify-between font-[Gabarito]  text-[#F3F3F3]"> About <img
             class=" w-[40px] ml-4 float-right mr-4" src="./image/source.gif" alt="runing deno"> </h2>
-        <p id="about" class="text-[#A1A1A1] font-[Rubik]  ">My world revolves around full-stack AI application development, where I <span class="text-[#E5E5E5] underline decoration-blue-50"> build scalable backends and integrate smart AI systems </span> to create powerful, real-world solutions. While I’m comfortable with frontend, I specialize in backend and AI development. As a self-taught developer, <span class="text-[#E5E5E5] underline decoration-blue-50"> I’ve solved real problems and won 6 hackathons with fast and innovative thinking.</span>
+        <p id="about" class="text-[#A1A1A1] font-[Rubik]  ">My world revolves around full-stack AI application development, where  <span class="text-[#E5E5E5] underline decoration-blue-50">I build scalable backends and integrate smart AI systems </span> to create powerful, real-world solutions. While I’m comfortable with frontend, I specialize in backend and AI development. As a self-taught developer, <span class="text-[#E5E5E5] underline decoration-blue-50"> I’ve solved real problems and won 6 hackathons with fast and innovative thinking.</span>
         </p>
       </div>
 
@@ -83,14 +83,14 @@
 <h2 class="text-2xl font-medium mb-2 font-[Gabarito] text-[#F3F3F3]">Work Experience</h2>
 
 <!-- Card 1 -->
-<div class="mb-4 job-container">
+<div  class="mb-4 job-container">
   <div class="jobdis flex justify-between items-start cursor-pointer" 
        onmouseover="hoverArrow(this)"
        onmouseout="unhoverArrow(this)"
        onclick="toggleDropdown(this)">
-    <div class="flex gap-4 items-center">
+    <div  class="flex gap-4 items-center">
       <img src="./image/ilegal.png" alt="Ilegal" class="w-10 h-10 rounded-[5px] bg-white p-1">
-      <div class="font-[Gabarito]">
+      <div id="work-name" class="font-[Gabarito]">
         <h3 class="font-semibold font-[200] text-lg text-[#D1D5DB]">
           ilegallearn
           <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
@@ -117,8 +117,8 @@
        onclick="toggleDropdown(this)">
     <div class="flex gap-4 items-center">
       <img src="./image/enso.png" alt="Taskify" class="w-[40px]  rounded-[5px] bg-white p-[3px]">
-      <div class="font-[Gabarito]">
-        <h3 id="work-heading"  class="font-semibold text-lg font-[200] text-[#D1D5DB]">
+      <div id="work-name" class="font-[Gabarito]">
+        <h3  class="font-semibold text-lg font-[200] text-[#D1D5DB]">
           Taskify
           <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
         </h3>
@@ -318,87 +318,114 @@
             </p>
     
             <!-- card 1   -->
-            <div
-              class="flex text-white border border-gray-700 rounded-[2px] p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
-              <div class="w-full md:w-[450px]">
-                <img src="/image/nexora.png" alt="Project Screenshot" class="">
-              </div>
-              <div class="w-full md:w-[320px] flex flex-col text-start">
-                <h2 class="text-[23px] font-semibold">Nexora</h2>
-                <p class="text-[#A1A1A1] text-[12px] mt-1">
-                  AI Resume Analyzer for ATS checks, grammar
-                  <span onclick="openModal()" class="cursor-pointer text-[#5966F3]"> click more</span>
-                </p>
-                <div id="popupModal"
-                  class="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden transition-opacity duration-300 ease-out">
-                  <div id="popupContent"
-                    class="bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out">
-                    <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal()">
-                      &times;
-                    </button>
-                    <h2 class="text-xl font-bold mb-2 text-center">About Nuvaria</h2>
-                    <p class="text-sm text-center">
-                      Nuvaria is an advanced AI web application designed to generate stunning images and videos using
-                      state-of-the-art machine learning models...
-                    </p>
-                  </div>
-                </div>
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img
-                      src="./image/python.png" class="w-4" alt="Python Icon">Python</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img
-                      src="./image/C.png" class="w-4" alt="Python Icon">C</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img
-                      src="./image/c-.png" class="w-4" alt="Python Icon">C++</a>
-                </div>
-                <div class="flex gap-4 mt-[13px]">
-                  <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://github.com/vikaspal9131/Nexora"><i class="ri-github-fill "></i>Code</a>
-                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank"  href="https://nexora-pl6k.onrender.com"><i class="ri-global-line"></i> Website</a>
-                </div>
-              </div>
-            </div>
+     <!-- CARD 1 -->
+<div class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
+  <div class="w-full md:w-[450px]">
+    <img src="/image/nexora.png" alt="Project Screenshot">
+  </div>
+  <div class="w-full md:w-[320px] flex flex-col text-start">
+    <h2 class="text-[23px] font-semibold">Nexora</h2>
+    <p class="text-[#A1A1A1] text-[12px] mt-1">
+      AI Resume Analyzer for ATS checks, grammar
+      <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
+    </p>
+
+    <!-- MODAL -->
+    <div class="popupModal fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+      <div class="popupContent bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out">
+        <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal(this)">&times;</button>
+        <h2 class="text-xl font-bold mb-2 text-center">About Nexora</h2>
+        <p class="text-sm text-center">
+          Nexora is an AI Resume Analyzer...
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap gap-2 mt-2">
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/python.png" class="w-4" alt="">Python</a>
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/C.png" class="w-4" alt="">C</a>
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/c-.png" class="w-4" alt="">C++</a>
+    </div>
+    <div class="flex gap-4 mt-[13px]">
+      <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://github.com/vikaspal9131/Nexora"><i class="ri-github-fill "></i>Code</a>
+      <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://nexora-pl6k.onrender.com"><i class="ri-global-line"></i> Website</a>
+    </div>
+  </div>
+</div>
+
+<!-- CARD 2 (SAME STRUCTURE, DIFFERENT CONTENT IN MODAL) -->
+<div class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
+  <div class="w-full md:w-[450px]">
+    <img src="/image/nexora.png" alt="Project Screenshot">
+  </div>
+  <div class="w-full md:w-[320px] flex flex-col text-start">
+    <h2 class="text-[23px] font-semibold">Nexora</h2>
+    <p class="text-[#A1A1A1] text-[12px] mt-1">
+      AI Resume Analyzer for ATS checks, grammar
+      <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
+    </p>
+
+    <!-- MODAL -->
+    <div class="popupModal fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+      <div class="popupContent bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out">
+        <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal(this)">&times;</button>
+        <h2 class="text-xl font-bold mb-2 text-center">About Nexora (Card 2)</h2>
+        <p class="text-sm text-center">
+          This is another modal for the second card. 
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur corporis, odio molestiae ad voluptatibus magnam facere! Impedit eligendi nam vel sit recusandae necessitatibus, iure ipsum veritatis iste nobis architecto distinctio.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap gap-2 mt-2">
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/python.png" class="w-4" alt="">Python</a>
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/C.png" class="w-4" alt="">C</a>
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/c-.png" class="w-4" alt="">C++</a>
+    </div>
+    <div class="flex gap-4 mt-[13px]">
+      <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://github.com/vikaspal9131/Nexora"><i class="ri-github-fill "></i>Code</a>
+      <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://nexora-pl6k.onrender.com"><i class="ri-global-line"></i> Website</a>
+    </div>
+  </div>
+</div>
+<div class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
+  <div class="w-full md:w-[450px]">
+    <img src="/image/nexora.png" alt="Project Screenshot">
+  </div>
+  <div class="w-full md:w-[320px] flex flex-col text-start">
+    <h2 class="text-[23px] font-semibold">Nexora</h2>
+    <p class="text-[#A1A1A1] text-[12px] mt-1">
+      AI Resume Analyzer for ATS checks, grammar
+      <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
+    </p>
+
+    <!-- MODAL -->
+    <div class="popupModal fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+      <div class="popupContent bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out">
+        <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal(this)">&times;</button>
+        <h2 class="text-xl font-bold mb-2 text-center">About Nexora (Card 44)</h2>
+        <p class="text-sm text-center">
+          This is another modal for the second card. 
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur corporis, odio molestiae ad voluptatibus magnam facere! Impedit eligendi nam vel sit recusandae necessitatibus, iure ipsum veritatis iste nobis architecto distinctio.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap gap-2 mt-2">
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/python.png" class="w-4" alt="">Python</a>
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/C.png" class="w-4" alt="">C</a>
+      <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img src="./image/c-.png" class="w-4" alt="">C++</a>
+    </div>
+    <div class="flex gap-4 mt-[13px]">
+      <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://github.com/vikaspal9131/Nexora"><i class="ri-github-fill "></i>Code</a>
+      <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://nexora-pl6k.onrender.com"><i class="ri-global-line"></i> Website</a>
+    </div>
+  </div>
+</div>
+
+<!-- ✅ Script -->
 
 
-            <!-- card 2   -->
-            <div
-              class="flex text-white border border-gray-700 rounded-[2px] p-2 md: flex flex-col md:flex-row gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
-              <div class="w-full md:w-[450px]">
-                <img src="/image/nexora.png" alt="Project Screenshot" class="">
-              </div>
-              <div class="w-full md:w-[320px] flex flex-col text-start">
-                <h2 class="text-[23px] font-semibold">Nexora</h2>
-                <p class="text-[#A1A1A1] text-[12px] mt-1">
-                  AI Resume Analyzer for ATS checks, grammar
-                  <span onclick="openModal()" class="cursor-pointer text-[#5966F3]"> click more</span>
-                </p>
-                <div id="popupModal"
-                  class="fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden transition-opacity duration-300 ease-out">
-                  <div id="popupContent"
-                    class="bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out">
-                    <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal()">
-                      &times;
-                    </button>
-                    <h2 class="text-xl font-bold mb-2 text-center">About Nuvaria</h2>
-                    <p class="text-sm text-center">
-                      Nuvaria is an advanced AI web application designed to generate stunning images and videos using
-                      state-of-the-art machine learning models...
-                    </p>
-                  </div>
-                </div>
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img
-                      src="./image/python.png" class="w-4" alt="Python Icon">Python</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img
-                      src="./image/C.png" class="w-4" alt="Python Icon">C</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2 text-white mb-[5px]"><img
-                      src="./image/c-.png" class="w-4" alt="Python Icon">C++</a>
-                </div>
-                <div class="flex gap-4 mt-[13px]">
-                  <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank" href="https://github.com/vikaspal9131/Nexora"><i class="ri-github-fill "></i>Code</a>
-                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300" target="_blank"  href="https://nexora-pl6k.onrender.com"><i class="ri-global-line"></i> Website</a>
-                </div>
-              </div>
-            </div>
           </section>
 
         </section>

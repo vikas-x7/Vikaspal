@@ -103,10 +103,17 @@ body::-webkit-scrollbar {
   }
 
   #about {
-    font-size: 11px;
+    font-size: 12px;
   }
   #work-time{
-    margin-top: 3px;
+    margin-top: 10px;
+  }
+
+  #work-name h3{
+    font-size: 15px;
+  }
+  #work-name p{
+    font-size: 10px;
   }
   
  
@@ -120,7 +127,6 @@ body::-webkit-scrollbar {
 }
 
 .skill-col p {
-  
   color: #d3cfcf;
   border-radius:3px;
   font-size: 11px;
