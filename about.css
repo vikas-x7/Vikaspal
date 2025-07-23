@@ -81,6 +81,7 @@
 @media screen and (max-width: 602px) {
   .main-section{
     padding: 2px !important;
+    margin-top: -20px;
   }
   .name-heading {
     font-size: 30px !important;  
@@ -95,10 +96,11 @@
 @media screen and (max-width: 386px) {
   .main-section{
     padding: 2px !important;
+   
   }
 
   #profile{
-    margin-top: 20px;
+    margin-top: 17px;
   }
   .name-heading {
     font-size: 7vw !important; 
