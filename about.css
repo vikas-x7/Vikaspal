@@ -111,3 +111,24 @@ body::-webkit-scrollbar {
   
  
 }
+
+
+.skill-col {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.skill-col p {
+  
+  color: #d3cfcf;
+  border-radius:3px;
+  font-size: 11px;
+  padding: 1px 10px 1px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+  border: 1px solid #232323;
+
+}
