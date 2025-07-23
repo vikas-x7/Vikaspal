@@ -51,3 +51,23 @@ function closeModal() {
     modal.classList.add("hidden");
   }, 300);
 }
+
+
+ function toggleDropdown(header) {
+    const dropdown = header.nextElementSibling;
+    if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
+      dropdown.style.maxHeight = "0px";
+    } else {
+      dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+    }
+  }
+
+  function hoverArrow(el) {
+    const arrow = el.querySelector(".job-arrow");
+    arrow.classList.replace("text-black", "text-white");
+  }
+
+  function unhoverArrow(el) {
+    const arrow = el.querySelector(".job-arrow");
+    arrow.classList.replace("text-white", "text-black");
+  }

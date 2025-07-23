@@ -71,10 +71,7 @@
       <div>
         <h2 class="text-2xl font-medium flex items-center justify-between font-[Gabarito]  text-[#F3F3F3]"> About <img
             class=" w-[40px] ml-4 float-right mr-4" src="./image/source.gif" alt="runing deno"> </h2>
-        <p id="about" class="text-[#A1A1A1] font-[Rubik]  ">My world revolves around full-stack AI application development, where I
-          integrate cutting-edge AI with frontend and backend expertise to build intelligent, scalable solutions. As a
-          self-taught developer, I specialize in transforming ideas into production-ready AI-powered applications.
-          Driven by curiosity,
+        <p id="about" class="text-[#A1A1A1] font-[Rubik]  ">My world revolves around full-stack AI application development, where I <span class="text-[#E5E5E5] underline decoration-blue-50"> build scalable backends and integrate smart AI systems </span> to create powerful, real-world solutions. While I’m comfortable with frontend, I specialize in backend and AI development. As a self-taught developer, <span class="text-[#E5E5E5] underline decoration-blue-50"> I’ve solved real problems and won 6 hackathons with fast and innovative thinking.</span>
         </p>
       </div>
 
@@ -98,17 +95,17 @@
           ilegallearn
           <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
         </h3>
-        <p class="text-sm text-[#A1A1A1]">AI Engineer intern</p>
+        <p  class="text-sm text-[#A1A1A1]">AI Engineer intern</p>
       </div>
     </div>
-    <div class="text-[#A1A1A1] font-[Gabarito]">
+    <div id="work-time" class="text-[#A1A1A1] font-[Gabarito]">
       <p class="text-[11px]">Feb 2025 - May 2025</p>
       <p class="text-[10px] text-end mt-2 font-[100]">Remote</p>
     </div>
   </div>
 
-  <div class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#D1D5DB] text-sm pl-14 pr-4">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, culpa minima sed, obcaecati nisi explicabo eligendi quae.</p>
+  <div class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#D1D5DB] text-sm pl-14 pr-4 font-[Gabarito] font-[100]">
+    <p>As an AI Intern at iLegalAdvice, I built two impactful features — a Case Summarizer and a Legal Dictionary — now integrated into the company’s paid plans and driving real revenue. The Case Summarizer helps users condense 600+ page legal PDFs into concise summaries, while the Legal Dictionary provides clear meanings for complex legal terms, improving efficiency and accessibility for legal professionals.</p>
   </div>
 </div>
 
@@ -121,45 +118,25 @@
     <div class="flex gap-4 items-center">
       <img src="./image/enso.png" alt="Taskify" class="w-10 h-10 rounded-[5px] bg-white p-1">
       <div class="font-[Gabarito]">
-        <h3 class="font-semibold text-lg font-[200] text-[#D1D5DB]">
+        <h3 id="work-heading"  class="font-semibold text-lg font-[200] text-[#D1D5DB]">
           Taskify
           <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
         </h3>
         <p class="text-sm text-[#A1A1A1]">Full-stack developer</p>
       </div>
     </div>
-    <div class="text-[#A1A1A1] font-[Gabarito]">
+    <div  class="text-[#A1A1A1] font-[Gabarito]">
       <p class="text-[11px] font-[Gabarito]">Sept 2024 - Dec 2024</p>
       <p class="text-[10px] text-end mt-2 font-[100]">Remote</p>
     </div>
   </div>
 
-  <div class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#D1D5DB] text-sm pl-14 pr-4">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, culpa minima sed, obcaecati nisi explicabo eligendi quae.</p>
+  <div class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#D1D5DB] text-sm pl-14 pr-4 font-[Gabarito] font-[100]">
+    <p>I developed a scalable full-stack platform tailored to my client's needs, ensuring a smooth user experience, strong performance, and seamless workflow integration.</p>
   </div>
 </div>
 
-<!-- JavaScript -->
-<script>
-  function toggleDropdown(header) {
-    const dropdown = header.nextElementSibling;
-    if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
-      dropdown.style.maxHeight = "0px";
-    } else {
-      dropdown.style.maxHeight = dropdown.scrollHeight + "px";
-    }
-  }
 
-  function hoverArrow(el) {
-    const arrow = el.querySelector(".job-arrow");
-    arrow.classList.replace("text-black", "text-white");
-  }
-
-  function unhoverArrow(el) {
-    const arrow = el.querySelector(".job-arrow");
-    arrow.classList.replace("text-white", "text-black");
-  }
-</script>
 
 
     </section>
