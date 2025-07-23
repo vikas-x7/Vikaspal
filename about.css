@@ -115,6 +115,12 @@ body::-webkit-scrollbar {
   #work-name p{
     font-size: 12px;
   }
+  #hack-time {
+    font-size: 10px;
+  }
+  #hack-del{
+    font-size: 11px;
+  }
   
  
 }
