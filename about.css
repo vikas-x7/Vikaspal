@@ -102,11 +102,15 @@
   }
   .name-heading {
     font-size: 7vw !important; 
-    margin-bottom: -4px; 
+    margin-bottom: -8px; 
   }
 
   #sub-heading{
-    font-size: 13px;
+    font-size: 11px;
+  }
+
+  #about{
+    font-size: 11px;
   }
  
 }
