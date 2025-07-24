@@ -9,8 +9,8 @@ window.addEventListener('load', () => {
       loader.style.display = 'none';
       document.body.style.overflow = 'auto';
       typeEffect();
-    }, 1000);
-  }, 200);
+    }, 1000); 
+  }, 200); 
 });
 
 const originalTitle = document.title;
@@ -22,32 +22,34 @@ document.addEventListener("visibilitychange", function () {
   }
 });
 
-function toggleDropdown(header) {
-  const dropdown = header.nextElementSibling;
-  if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
-    dropdown.style.maxHeight = "0px";
-  } else {
-    dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+
+
+
+ function toggleDropdown(header) {
+    const dropdown = header.nextElementSibling;
+    if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
+      dropdown.style.maxHeight = "0px";
+    } else {
+      dropdown.style.maxHeight = dropdown.scrollHeight + "px";
+    }
   }
-}
 
-function hoverArrow(el) {
-  const arrow = el.querySelector(".job-arrow");
-  arrow.classList.replace("text-black", "text-white");
-}
+  function hoverArrow(el) {
+    const arrow = el.querySelector(".job-arrow");
+    arrow.classList.replace("text-black", "text-white");
+  }
 
-function unhoverArrow(el) {
-  const arrow = el.querySelector(".job-arrow");
-  arrow.classList.replace("text-white", "text-black");
-}
+  function unhoverArrow(el) {
+    const arrow = el.querySelector(".job-arrow");
+    arrow.classList.replace("text-white", "text-black");
+  }
 
-
-
-
-function openModal(el) {
+  function openModal(el) {
   const card = el.closest('.card');
   const modal = card.querySelector('.popupModal');
   const content = modal.querySelector('.popupContent');
+  document.body.style.overflow = 'hidden'; 
+ 
 
   modal.classList.remove('hidden');
   setTimeout(() => {
@@ -62,6 +64,7 @@ function closeModal(el) {
 
   content.classList.remove('scale-100', 'opacity-100');
   content.classList.add('scale-95', 'opacity-0');
+   document.body.style.overflow = 'auto';
 
   setTimeout(() => {
     modal.classList.add('hidden');
