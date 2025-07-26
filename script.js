@@ -34,15 +34,15 @@ document.addEventListener("visibilitychange", function () {
     }
   }
 
-  function hoverArrow(el) {
-    const arrow = el.querySelector(".job-arrow");
-    arrow.classList.replace("text-black", "text-white");
-  }
+  // function hoverArrow(el) {
+  //   const arrow = el.querySelector(".job-arrow");
+  //   arrow.classList.replace("text-black", "text-white");
+  // }
 
-  function unhoverArrow(el) {
-    const arrow = el.querySelector(".job-arrow");
-    arrow.classList.replace("text-white", "text-black");
-  }
+  // function unhoverArrow(el) {
+  //   const arrow = el.querySelector(".job-arrow");
+  //   arrow.classList.replace("text-white", "text-black");
+  // }
 
   function openModal(el) {
   const card = el.closest('.card');
