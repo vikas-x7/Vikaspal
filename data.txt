@@ -1,0 +1,63 @@
+
+         <div class="mb-4 job-container">
+        <div class="jobdis flex justify-between items-start cursor-pointer" onclick="toggleDropdown(this)">
+          <div class="flex gap-4 items-center">
+            <img src="./image/kripai.jpg" alt="Ilegal" class="w-10 h-10 rounded-[5px] p-1 bg-white">
+            <div id="work-name" class="font-[Gabarito]">
+              <h3 class="font-semibold font-[200] text-lg text-[#D1D5DB]">
+                Krip AI
+                <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
+              </h3>
+              <p class="text-sm text-[#A1A1A1]">Backend Developer intern</p>
+            </div>
+          </div>
+          <div id="work-time" class="text-[#A1A1A1] font-[Gabarito]">
+            <p class="text-[11px]">Aug 2025 - Present</p>
+            <p class="text-[10px] text-end mt-2 font-[100]">Remote</p>
+          </div>
+        </div>
+
+        <div
+          class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#A1A1A1] text-sm pl-14 pr-4 font-[Gabarito] font-[100]">
+          <p>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > AI Intern at iLegalAdvice, contributed to core product features. </li>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > Built two key tools: Case Summarizer and Legal Dictionary , Both features are now part of the company’s paid plans, helping generate real revenue.</li>
+
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > Case Summarizer condenses 600+ page legal PDFs into short, readable summaries.</li>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > Legal Dictionary explains complex legal terms with simple definitions.</li>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" >Improved efficiency and accessibility for legal professionals through AI solutions.</li>
+            </p>
+        </div>
+      </div>
+
+      <!-- Card 1 -->
+    <div class="mb-4 job-container">
+        <div class="jobdis flex justify-between items-start cursor-pointer" onclick="toggleDropdown(this)">
+          <div class="flex gap-4 items-center">
+            <img src="./image/nuage.png" alt="Ilegal" class="w-10 h-10 rounded-[5px] bg-[#F2F2F2]">
+            <div id="work-name" class="font-[Gabarito]">
+              <h3 class="font-semibold font-[200] text-lg text-[#D1D5DB]">
+                Nuage 
+                <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
+              </h3>
+              <p class="text-sm text-[#A1A1A1]">SWE intern</p>
+            </div>
+          </div>
+          <div id="work-time" class="text-[#A1A1A1] font-[Gabarito]">
+            <p class="text-[11px]">July 2025 - Present</p>
+            <p class="text-[10px] text-end mt-2 font-[100]">Remote</p>
+          </div>
+        </div>
+
+        <div
+          class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#A1A1A1] text-sm pl-14 pr-4 font-[Gabarito] font-[100]">
+          <p>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > AI Intern at iLegalAdvice, contributed to core product features. </li>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > Built two key tools: Case Summarizer and Legal Dictionary , Both features are now part of the company’s paid plans, helping generate real revenue.</li>
+
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > Case Summarizer condenses 600+ page legal PDFs into short, readable summaries.</li>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" > Legal Dictionary explains complex legal terms with simple definitions.</li>
+              <li id="hack-del" class="text-sm mt-1 text-[#A1A1A1] font-[Rubik]" >Improved efficiency and accessibility for legal professionals through AI solutions.</li>
+            </p>
+        </div>
+      </div>
