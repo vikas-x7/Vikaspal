@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,13 +18,8 @@
 
 <body class="bg-[#010204] flex justify-center text-white ">
 
-  <!-- loader  -->
-  <div class="loader-div" id="loader">
-    <div class="loader"></div>
-  </div>
-
   <!-- main section  -->
-  <section class="main-section flex flex-col w-[650px] px-10 ">
+<section class="main-section flex flex-col w-[650px] px-10 ">
 
     <!-- main heading  -->
     <section class="mt-10 px-4 flex items-center justify-center ">
@@ -40,8 +34,6 @@
           <p id="sub-heading" class="text-[16px] leading-[1.2] mt-1 text-[#D1D5Da] font-[Rubik]">
             Software Engineer , I build<span id="typing" class="inline pl-1"></span><span
               class="blinking-cursor">|</span> </p>
-
-
           <p
             class="text-[15px] px-[9px] py-[-3px] border-[1px] border-[#232323] rounded-[3px] inline-flex items-center justify-center gap-2 mt-2 ">
 
@@ -60,10 +52,6 @@
             </a>
           </p>
         </div>
-
-
-
-
       </div>
     </section>
 
@@ -73,7 +61,7 @@
       <div>
         <h2 class="text-2xl font-medium flex items-center justify-between font-[Gabarito]  text-[#F3F3F3]"> About <img
             class=" w-[40px] ml-4 float-right mr-4" src="./image/source.gif" alt="runing deno"> </h2>
-        <p id="about" class="text-[#A1A1A1] font-[Rubik]  ">My world revolves around full-stack AI application
+        <p id="about" class="text-[#A1A1A1] font-[Gabarito] ">My world revolves around full-stack AI application
           development, where <span class="text-[#E5E5E5] underline decoration-blue-50">I build scalable backends and
             integrate smart AI systems </span> to create powerful, real-world solutions. While I’m comfortable with
           frontend, I specialize in backend and AI development. As a self-taught developer, <span
@@ -87,18 +75,34 @@
     <section class="mt-10 px-4">
 
       <h2 class="text-2xl font-medium mb-2 font-[Gabarito] text-[#F3F3F3]">Work Experience</h2>
-
-
-      
-    
-      
+      <div class="mb-4 job-container">
+        <div class="jobdis flex justify-between items-start cursor-pointer"  onclick="toggleDropdown(this)">
+          <div class="flex gap-4 items-center">
+            <img src="./image/kripai.jpg" alt="Ilegal" class="w-10 h-10 rounded-[5px] bg-white p-[5px]">
+            <div id="work-name" class="font-[Gabarito]">
+              <h3 class="font-semibold font-[200] text-lg text-[#D1D5DB]">
+                Krip ai
+                <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
+              </h3>
+              <p class="text-sm text-[#A1A1A1]">Full-stack developer</p>
+            </div>
+          </div>
+          <div id="work-time" class="text-[#A1A1A1] font-[Gabarito]">
+            <p class="text-[11px]">Jun 2025 - Sep 2025</p>
+            <p class="text-[10px] text-end mt-2 font-[100]">Remote</p>
+          </div>
+        </div>
+        <div
+          class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#A1A1A1] text-sm pl-14 pr-4 font-[Gabarito] font-[100]"><p></p>
+        </div>
+      </div>
       <div class="mb-4 job-container">
         <div class="jobdis flex justify-between items-start cursor-pointer"  onclick="toggleDropdown(this)">
           <div class="flex gap-4 items-center">
             <img src="./image/images.jpg" alt="Ilegal" class="w-10 h-10 rounded-[5px] bg-white p-[2px]">
             <div id="work-name" class="font-[Gabarito]">
               <h3 class="font-semibold font-[200] text-lg text-[#D1D5DB]">
-                ilegallearn
+                iLegalAdvice
                 <i class="job-arrow ri-arrow-down-s-line text-black transition-colors duration-300"></i>
               </h3>
               <p class="text-sm text-[#A1A1A1]">AI  Engineer intern</p>
@@ -109,7 +113,6 @@
             <p class="text-[10px] text-end mt-2 font-[100]">Remote</p>
           </div>
         </div>
-
         <div
           class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#A1A1A1] text-sm pl-14 pr-4 font-[Gabarito] font-[100]">
           <p>
@@ -122,7 +125,6 @@
             </p>
         </div>
       </div>
-
       <!-- Card 2 -->
       <div class="mb-4 job-container">
         <div class="jobdis flex justify-between items-start cursor-pointer"  onclick="toggleDropdown(this)">
@@ -141,7 +143,6 @@
             <p class="text-[10px] text-end mt-2 font-[100]">Remote</p>
           </div>
         </div>
-
         <div
           class="dropdown-content overflow-hidden max-h-0 transition-all duration-500 ease-in-out text-[#A1A1A1] text-sm pl-14 pr-4 font-[Gabarito] font-[100]">
           <p>
@@ -150,10 +151,6 @@
           </p>
         </div>
       </div>
-
-
-
-
     </section>
 
 
@@ -344,11 +341,14 @@
 
        <!-- card 1  -->
 
+
+
+
+
 <div
           class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
           <div class="w-full md:w-[460px]">
-            
-               <video class="rounded-[3px] z-10 relative pointer-events-none select-none" autoplay loop muted
+             <video class="w-[550px] rounded-[3px] z-10 relative pointer-events-none select-none" autoplay loop muted
             playsinline preload="auto">
             <source src="https://res.cloudinary.com/dyv9kenuj/video/upload/v1754660162/demo1_ni16sb.mp4" type="video/mp4">
           </video>
@@ -388,7 +388,7 @@
                   <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
                     target="_blank" href="https://github.com/vikaspal9131/SnappyGit"><i
                       class="ri-github-fill "></i>Code</a>
-                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#010204] text-white px-4 font-semibold hover:bg-[#27272A] hover:text-white duration-300"
                     target="_blank" href="https://snappygit.onrender.com/"><i class="ri-global-line"></i> Website</a>
                 </div>
               </div>
@@ -408,7 +408,7 @@
                 target="_blank" href="https://snappygit.onrender.com/"><i class="ri-global-line"></i> Website</a>
             </div>
           </div>
-        </div>
+  </div>
 
         <div
           class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
@@ -479,68 +479,7 @@
 
         <!-- card 2  -->
        
-   <div
-          class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
-          <div class="w-full md:w-[450px]">
-            <img src="/image/hyper.png" alt="Project Screenshot">
-          </div>
-          <div class="w-full md:w-[320px] flex flex-col text-start">
-            <h2 class="text-[20px] font-semibold">HyperHorizon</h2>
-            <p class="text-[#A1A1A1] text-[12px] mt-1">
-             HyperHorizon is a frontend project highlighting future 
-              <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
-            </p>
-
-            <!-- MODAL -->
-            <div
-              class="popupModal fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden">
-              <div
-                class="popupContent bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out font-[Gabarito]">
-                <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal(this)"><i
-                    class="ri-close-line"></i></button>
-                <h2 class="text-xl font-semibold mb-2 text-start">HyperHorizon</h2>
-                <p class="text-sm text-start">
-                HyperHorizon is a frontend project highlighting future transportation concepts, featuring a sleek and modern
-          web UI design.
-                </p>
-
-                <h2 class="text-[18px] font-semibold mt-5">Technology</h2>
-
-                <div class="flex flex-wrap gap-2 mt-2">
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">JavaScript</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">locomotive.js</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Spider.js</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Html&css</a>
-                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Vercel</a>
-               
-
-
-                </div>
-                <div class="flex gap-4 mt-[13px]">
-                  <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
-                    target="_blank" href="https://github.com/vikaspal9131/HyperHorizon"><i
-                      class="ri-github-fill "></i>Code</a>
-                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
-                    target="_blank" href="https://hyper-horizon.vercel.app/"><i class="ri-global-line"></i> Website</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex flex-wrap gap-2 mt-2">
-              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">JavaScript</a>
-              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">locomotive.js</a>
-              
-           
-
-            </div>
-            <div class="flex gap-4 mt-[13px]">
-              <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
-                target="_blank" href="https://github.com/vikaspal9131/HyperHorizon"><i class="ri-github-fill "></i>Code</a>
-              <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
-                target="_blank" href="https://hyper-horizon.vercel.app/"><i class="ri-global-line"></i> Website</a>
-            </div>
-          </div>
-    </div>
+   
 
 
     <!-- card 3 -->
@@ -610,6 +549,70 @@
           </div>
     </div>
 
+
+
+     <div
+          class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
+          <div class="w-full md:w-[450px]">
+            <img src="/image/hyper.png" alt="Project Screenshot">
+          </div>
+          <div class="w-full md:w-[320px] flex flex-col text-start">
+            <h2 class="text-[20px] font-semibold">HyperHorizon</h2>
+            <p class="text-[#A1A1A1] text-[12px] mt-1">
+             HyperHorizon is a frontend project highlighting future 
+              <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
+            </p>
+
+            <!-- MODAL -->
+            <div
+              class="popupModal fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+              <div
+                class="popupContent bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out font-[Gabarito]">
+                <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal(this)"><i
+                    class="ri-close-line"></i></button>
+                <h2 class="text-xl font-semibold mb-2 text-start">HyperHorizon</h2>
+                <p class="text-sm text-start">
+                HyperHorizon is a frontend project highlighting future transportation concepts, featuring a sleek and modern
+          web UI design.
+                </p>
+
+                <h2 class="text-[18px] font-semibold mt-5">Technology</h2>
+
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">JavaScript</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">locomotive.js</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Spider.js</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Html&css</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Vercel</a>
+               
+
+
+                </div>
+                <div class="flex gap-4 mt-[13px]">
+                  <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                    target="_blank" href="https://github.com/vikaspal9131/HyperHorizon"><i
+                      class="ri-github-fill "></i>Code</a>
+                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                    target="_blank" href="https://hyper-horizon.vercel.app/"><i class="ri-global-line"></i> Website</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">JavaScript</a>
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">locomotive.js</a>
+              
+           
+
+            </div>
+            <div class="flex gap-4 mt-[13px]">
+              <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                target="_blank" href="https://github.com/vikaspal9131/HyperHorizon"><i class="ri-github-fill "></i>Code</a>
+              <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                target="_blank" href="https://hyper-horizon.vercel.app/"><i class="ri-global-line"></i> Website</a>
+            </div>
+          </div>
+    </div>
     <!-- card 4  -->
        <div
           class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
@@ -676,6 +679,142 @@
           </div>
     </div>
 
+
+    
+           <div
+          class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
+          <div class="w-full md:w-[460px]">
+             
+            <img src="/image/Screenshot 2025-08-26 135434.png" alt="Project Screenshot">
+         
+              
+          </div>
+          <div class="w-full md:w-[320px] flex flex-col text-start">
+            <h2 class="text-[20px] font-semibold">Ginger</h2>
+            <p class="text-[#A1A1A1] text-[12px] mt-1">
+              This project is built using React.js, a modern JavaScript 
+              <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
+            </p>
+
+            <!-- MODAL -->
+            <div
+              class="popupModal fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+              <div
+                class="popupContent bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out font-[Gabarito]">
+                <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal(this)"><i
+                    class="ri-close-line"></i></button>
+                <h2 class="text-xl font-semibold mb-2 text-start">Ginger</h2>
+                <p class="text-sm text-start">
+                 This project is built using React.js, a modern JavaScript library for creating fast, responsive, and interactive user interfaces. The main goal of this project is to provide a smooth user experience with reusable components, clean code structure, and scalability in mind
+                </p>
+
+                <h2 class="text-[18px] font-semibold mt-5">Technology</h2>
+
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">React js </a>
+                 
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">JavaScript</a>
+                 
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Tailwindcss</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Vercel</a>
+                
+               
+                </div>
+                <div class="flex gap-4 mt-[13px]">
+                  <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                    target="_blank" href="https://github.com/vikaspal9131/gogig"><i
+                      class="ri-github-fill "></i>Code</a>
+                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                    target="_blank" href="https://gogig.vercel.app/"><i class="ri-global-line"></i> Website</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">React.js</a>
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">Tailwind css</a>
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">JavaScript</a>
+           
+
+            </div>
+            <div class="flex gap-4 mt-[13px]">
+              <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                target="_blank" href="https://github.com/vikaspal9131/gogig"><i class="ri-github-fill "></i>Code</a>
+              <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                target="_blank" href="https://gogig.vercel.app/"><i class="ri-global-line"></i> Website</a>
+            </div>
+          </div>
+        </div>
+
+
+          <div
+          class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
+          <div class="w-full md:w-[460px]">
+             
+            <img src="/image/Helixai.png" alt="Project Screenshot">
+         
+              
+          </div>
+          <div class="w-full md:w-[320px] flex flex-col text-start">
+            <h2 class="text-[20px] font-semibold">Helix AI</h2>
+               <p class="text-[9px] text-red-400 "><i class="ri-error-warning-line"></i> In Development </p>
+            <p class="text-[#A1A1A1] text-[12px] mt-1">
+           Helix AI is a Web + AI based platform that helps 
+              <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
+            </p>
+
+            <!-- MODAL -->
+            <div
+              class="popupModal fixed inset-0 bg-black/30 backdrop-blur-sm flex items-center justify-center z-50 hidden">
+              <div
+                class="popupContent bg-white p-5 rounded shadow-lg w-[90%] max-w-md text-black relative transform scale-95 opacity-0 transition-all duration-300 ease-out font-[Gabarito]">
+                <button class="absolute top-2 right-3 text-black text-2xl font-bold" onclick="closeModal(this)"><i
+                    class="ri-close-line"></i></button>
+                <h2 class="text-xl font-semibold mb-2 text-start">Halix Ai</h2>
+                <p class="text-sm text-start">
+                Helix AI is a Web + AI based platform that helps   users in their career journey. It provides four main features: an AI-powered resume builder using LaTeX, a no-code portfolio builder with easy deployment, a job search option to find suitable opportunities, and a custom roadmap generator for career preparation and skill development. The platform acts as a complete career assistant by combining resume building, portfolio creation, job searching, and personalized roadmaps in one place.
+                </p>
+
+                <h2 class="text-[18px] font-semibold mt-5">Technology</h2>
+
+                <div class="flex flex-wrap gap-2 mt-2">
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">React.js</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Flask</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">JavaScript</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Firebase</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Tailwindcss</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">Render</a>
+                  <a class="tech-icon inline-flex p-1 rounded-[3px] items-center gap-2  mb-[5px]">PostgreSQL</a>
+
+        
+               
+                </div>
+                <div class="flex gap-4 mt-[13px]">
+                  <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                    target="_blank" href="https://github.com/vikaspal9131/Helix-AI"><i
+                      class="ri-github-fill "></i>Code</a>
+                  <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#010204] text-white px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                    target="_blank" href="https://helix-ai-hzml.vercel.app/"><i class="ri-global-line"></i> Website</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-2">
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">React.js</a>
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">PostgreSQL</a>
+              <a class="tech-icon inline-flex px-1 rounded-[3px] items-center gap-2 text-white mb-[5px] bg-[#27272A]">JavaScript</a>
+           
+
+            </div>
+            <div class="flex gap-4 mt-[5px]">
+              <a class="inline-flex rounded-[3px] items-center gap-2 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                target="_blank" href="https://github.com/vikaspal9131/Helix-AI"><i class="ri-github-fill "></i>Code</a>
+              <a class="inline-flex rounded-[3px] items-center gap-1 mb-[5px] bg-[#DAD9D9] text-black px-4 hover:bg-[#27272A] hover:text-white duration-300"
+                target="_blank" href="https://helix-ai-hzml.vercel.app/"><i class="ri-global-line"></i> Website</a>
+            </div>
+          </div>
+        </div>
+
     <!-- card 5  -->
        <div
           class="card flex text-white border border-gray-700 rounded-[2px] p-2 md:flex-row flex-col gap-6 items-center md:items-start max-w-5xl mx-auto my-10 font-[Rubik]">
@@ -684,7 +823,7 @@
           </div>
           <div class="w-full md:w-[320px] flex flex-col text-start">
             <h2 class="text-[20px] font-semibold">Swap  </h2>
-            <p class="text-[9px] text-red-400 "><i class="ri-error-warning-line"></i> In Development </p>
+            <p class="text-[9px] text-red-400 "><i class="ri-error-warning-line"></i> Deprecated </p>
             <p class="text-[#A1A1A1] text-[12px] mt-1">
             Skill Swap is a community platform where users 
               <span onclick="openModal(this)" class="cursor-pointer text-[#5966F3]"> click more</span>
@@ -805,6 +944,9 @@
           </div>
     </div>
 
+
+
+
       </section>
     </section>
 
@@ -895,7 +1037,7 @@
 
         <div class="flex items-start cursor-pointer font-[Gabarito] mt-10">
           <div class=" flex items-start cursor-pointer font-[Gabarito] border-b border-gray-700 pb-4">
-            <img src="./image/Screenshot 2025-07-23 010255.png" alt="" class="w-[40px] h-full rounded-full">
+            <img src="https://www.mpbse.nic.in/resources/images/MPBoardLogo.png" alt="" class="w-[40px] h-full rounded-full">
             <div class="ml-4">
               <h3 class="font-[100] text-lg flex items-center justify-between">Career Academy , indore </h3>
               <p class="text-sm text-[#A1A1A1]">2018 - 2019 <span>10th </span> </p>
