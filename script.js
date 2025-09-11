@@ -1,4 +1,17 @@
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  document.body.style.overflow = 'hidden';
+  loader.style.display = 'flex';
 
+  setTimeout(() => {
+    loader.classList.add('hide');
+    setTimeout(() => {
+      loader.style.display = 'none';
+      document.body.style.overflow = 'auto';
+      typeEffect();
+    }, 1000); 
+  }, 200); 
+});
 
 const originalTitle = document.title;
 document.addEventListener("visibilitychange", function () {
@@ -10,8 +23,6 @@ document.addEventListener("visibilitychange", function () {
 });
 
 
-
-
  function toggleDropdown(header) {
     const dropdown = header.nextElementSibling;
     if (dropdown.style.maxHeight && dropdown.style.maxHeight !== "0px") {
@@ -20,7 +31,6 @@ document.addEventListener("visibilitychange", function () {
       dropdown.style.maxHeight = dropdown.scrollHeight + "px";
     }
   }
-
 
 
   function openModal(el) {
