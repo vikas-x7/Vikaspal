@@ -11,9 +11,6 @@
 }
 
 
-
-
-
 * {
   caret-color: transparent;
 }
@@ -112,7 +109,7 @@ body::-webkit-scrollbar {
   }
 
   #about {
-    font-size: 12px;
+    font-size: 13px;
   }
   #work-time{
     margin-top: 10px;
