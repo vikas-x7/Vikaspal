@@ -44,3 +44,4 @@ function closeModal(el) {
     modal.classList.add('hidden');
   }, 300);
 }
+
