@@ -100,10 +100,11 @@ body::-webkit-scrollbar {
 
   #profile {
     margin-top: 17px;
+    width: 140px;
   }
   .name-heading {
     font-size: 7vw !important;
-    margin-bottom: -8px;
+    margin-bottom: -5px;
   }
 
   #sub-heading {
@@ -112,6 +113,7 @@ body::-webkit-scrollbar {
 
   #about {
     font-size: 14px;
+
   }
   #work-time{
     margin-top: 10px;
